@@ -51,7 +51,9 @@ namespace HyperloopDash.Helpers
 
         private void DetectSwipe()
         {
-            if (Vector2.Distance(_fingerDown, _fingerUp) > minSwipeDistance)
+            float distance = Vector2.Distance(_fingerDown, _fingerUp);
+            
+            if (distance > minSwipeDistance)
             {
                 float xDiff = _fingerUp.x - _fingerDown.x;
                 float yDiff = _fingerUp.y - _fingerDown.y;
@@ -59,15 +61,35 @@ namespace HyperloopDash.Helpers
                 if (Mathf.Abs(xDiff) > Mathf.Abs(yDiff))
                 {
                     // Horizontal Swipe
-                    if (xDiff > 0) OnSwipeRight?.Invoke();
-                    else OnSwipeLeft?.Invoke();
+                    if (xDiff > 0)
+                    {
+                        Debug.Log($"SWIPE RIGHT detected (distance: {distance})");
+                        OnSwipeRight?.Invoke();
+                    }
+                    else
+                    {
+                        Debug.Log($"SWIPE LEFT detected (distance: {distance})");
+                        OnSwipeLeft?.Invoke();
+                    }
                 }
                 else
                 {
                     // Vertical Swipe
-                    if (yDiff > 0) OnSwipeUp?.Invoke();
-                    else OnSwipeDown?.Invoke();
+                    if (yDiff > 0)
+                    {
+                        Debug.Log($"SWIPE UP detected (distance: {distance})");
+                        OnSwipeUp?.Invoke();
+                    }
+                    else
+                    {
+                        Debug.Log($"SWIPE DOWN detected (distance: {distance})");
+                        OnSwipeDown?.Invoke();
+                    }
                 }
+            }
+            else
+            {
+                Debug.Log($"Swipe too short: {distance} < {minSwipeDistance}");
             }
         }
     }

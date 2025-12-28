@@ -217,12 +217,19 @@ public class HeadlessBuilder
         // 4. Player
         GameObject player = GameObject.CreatePrimitive(PrimitiveType.Capsule);
         player.name = "Player";
-        player.tag = "Player"; // Default tag
+        player.tag = "Player";
         CharacterController cc = player.AddComponent<CharacterController>();
         PlayerController pc = player.AddComponent<PlayerController>();
-        pc.crashParticles = null; // Add if you have a particle prefab
-        // Make camera child of player for simple follow if preferred, or keep static relative
-        cam.transform.SetParent(player.transform);
+        pc.crashParticles = null;
+        
+        // Camera with follow controller (not parented to player)
+        CameraController camController = cam.AddComponent<CameraController>();
+        camController.target = player.transform;
+        camController.offset = new Vector3(0, 5, -10);
+        camController.smoothSpeed = 5f;
+        
+        // Add SwipeInput to managers
+        managers.AddComponent<HyperloopDash.Helpers.SwipeInput>();
         
         // 5. Environment / Spawner
         GameObject env = new GameObject("Environment");

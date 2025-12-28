@@ -79,14 +79,19 @@ namespace HyperloopDash.Gameplay
 
         private void HandleLaneMovement()
         {
-            // Smoothly lerp towards target X
+            if (GameManager.Instance == null) return;
+            
+            // Smoothly lerp towards target X (lane position)
             Vector3 currentPos = transform.position;
             float newX = Mathf.Lerp(currentPos.x, _targetX, Time.deltaTime * laneChangeSpeed);
             
-            Vector3 moveVector = new Vector3(newX - currentPos.x, 0, 0);
-            
-            // Apply simple gravity if needed, though we are sliding on ground
-            // For now, keep Y locked to 0 unless we add Jump
+            // CRITICAL FIX: Add forward movement using game speed
+            float forwardSpeed = GameManager.Instance.CurrentSpeed;
+            Vector3 moveVector = new Vector3(
+                newX - currentPos.x,  // Lateral movement
+                0,                     // No vertical
+                forwardSpeed * Time.deltaTime  // Forward movement
+            );
             
             _characterController.Move(moveVector);
         }

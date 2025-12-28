@@ -8,49 +8,66 @@ namespace HyperloopDash.Gameplay
     {
         public GameObject[] tunnelPrefabs;
         public float segmentLength = 20f;
-        public int initialSegments = 10;
+        public int activeSegments = 5;
         public Transform playerTransform;
 
         private float _spawnZ = 0f;
-        private float _safeZone = 30f;
-        
-        // Just keeping track of active segments implies we need a list if we want to recycle them customly,
-        // OR we just use the ObjectPooler. Let's use ObjectPooler.
-        // We assume "TunnelSegment" is a tag in the pooler.
+        private List<GameObject> _activeSegments = new List<GameObject>();
         
         private void Start()
         {
-            for (int i = 0; i < initialSegments; i++)
+            // Spawn initial segments
+            for (int i = 0; i < activeSegments; i++)
             {
                 SpawnSegment();
             }
+            Debug.Log($"TrackManager: Spawned {activeSegments} initial segments");
         }
 
         private void Update()
         {
+            if (GameManager.Instance == null || playerTransform == null) return;
+            
             if (GameManager.Instance.CurrentState == GameState.Playing)
             {
-                if (playerTransform.position.z - _safeZone > (_spawnZ - (initialSegments * segmentLength)))
+                // Spawn new segment when player moves forward
+                float playerZ = playerTransform.position.z;
+                float spawnThreshold = _spawnZ - (activeSegments * segmentLength);
+                
+                if (playerZ > spawnThreshold)
                 {
                     SpawnSegment();
-                    // We rely on segments to disable themselves when far behind, 
-                    // OR we handle it here. 
-                    // For simplicity, let's let segments handle their own return or stick to simple spawning.
-                    // Actually, for a tunnel, it's better to manage the queue here to ensure continuity.
+                    RecycleOldSegments();
                 }
             }
         }
 
         private void SpawnSegment()
         {
-            // Simple round robin or random segment
-            GameObject go = ObjectPooler.Instance.SpawnFromPool("TunnelSegment", Vector3.forward * _spawnZ, Quaternion.identity);
-            if(go != null) 
+            GameObject segment = ObjectPooler.Instance.SpawnFromPool("TunnelSegment", Vector3.forward * _spawnZ, Quaternion.identity);
+            if (segment != null)
             {
-                // In case it was pooled, we ensure it's at the right z
-                go.transform.position = Vector3.forward * _spawnZ;
+                segment.transform.position = Vector3.forward * _spawnZ;
+                _activeSegments.Add(segment);
+                _spawnZ += segmentLength;
             }
-            _spawnZ += segmentLength;
+        }
+
+        private void RecycleOldSegments()
+        {
+            if (playerTransform == null) return;
+            
+            // Remove segments that are far behind the player
+            float recycleDistance = segmentLength * 2;
+            _activeSegments.RemoveAll(segment =>
+            {
+                if (segment != null && segment.transform.position.z < playerTransform.position.z - recycleDistance)
+                {
+                    ObjectPooler.Instance.ReturnToPool(segment);
+                    return true;
+                }
+                return false;
+            });
         }
     }
 }

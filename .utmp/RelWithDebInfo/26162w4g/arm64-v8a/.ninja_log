@@ -1,0 +1,23 @@
+# ninja log v5
+1	1114	1766941241763047768	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	565c1d63a8dbce9a
+1114	1203	1766941241852043651	/Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/26162w4g/obj/arm64-v8a/libgame.so	863af24f8ad77055
+1	1065	1766941241714450714	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	871051bd9797bfd1
+2	996	1766941241644699827	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4370207a6699607
+1	948	1766941241596686858	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ecc25665f887b66b
+2	933	1766941241579315907	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	26dc540ea2d0a028
+1	931	1766941241576617027	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c20919792cfac2bb
+1	909	1766941241549218181	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	22cfb32892d48667
+2	905	1766941241547755803	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2751e3d0c456ed9e
+213	416	1766941241035325756	/Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/26162w4g/obj/arm64-v8a/libswappywrapper.so	a92a67d579ac1eff
+3	212	1766941240864354505	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	ec23d15d185deb48
+5	746	1766941744196494282	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	ec23d15d185deb48
+748	1224	1766941744650226931	/Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/26162w4g/obj/arm64-v8a/libswappywrapper.so	a92a67d579ac1eff
+4	1709	1766941745154011193	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2751e3d0c456ed9e
+3	1719	1766941745164294758	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	22cfb32892d48667
+4	1771	1766941745214888914	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	26dc540ea2d0a028
+3	1795	1766941745240729597	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c20919792cfac2bb
+3	1877	1766941745322843491	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ecc25665f887b66b
+4	1926	1766941745372174727	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4370207a6699607
+4	2104	1766941745550447171	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	871051bd9797bfd1
+3	2245	1766941745693332285	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	565c1d63a8dbce9a
+2245	2385	1766941745836449400	/Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/26162w4g/obj/arm64-v8a/libgame.so	863af24f8ad77055

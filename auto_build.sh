@@ -2,7 +2,7 @@
 
 # Configuration
 # Path to your Unity executable. Adjust version as needed.
-UNITY_PATH="/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/MacOS/Unity"
+UNITY_PATH="/Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/MacOS/Unity"
 PROJECT_PATH="$(pwd)"
 
 echo "----------------------------------------------------------------"
