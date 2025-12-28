@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using HyperloopDash.Managers;
 
 namespace HyperloopDash.UI
@@ -93,7 +94,9 @@ namespace HyperloopDash.UI
 
         public void OnRestartClicked()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            Debug.Log("RESTART CLICKED!");
+            Time.timeScale = 1f; // Ensure time is running
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         public void OnReviveClicked()

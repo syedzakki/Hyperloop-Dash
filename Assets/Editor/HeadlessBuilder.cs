@@ -83,13 +83,17 @@ public class HeadlessBuilder
     {
         if (!Directory.Exists("Assets/Materials")) AssetDatabase.CreateFolder("Assets", "Materials");
 
-        // BOOSTED color palette for better visibility
-        CreateMaterial("FloorDark", new Color(0.08f, 0.08f, 0.12f), false); // Slightly lighter
-        CreateMaterial("WallGlow", new Color(0.5f, 0.7f, 1f), true, 5f); // BRIGHTER blue
-        CreateMaterial("ObstacleRed", new Color(1f, 0.4f, 0.5f), true, 4f); // BRIGHTER red
-        CreateMaterial("CollectibleGreen", new Color(0.4f, 1f, 0.7f), true, 6f); // VERY bright green
-        CreateMaterial("PlayerGlow", new Color(0.7f, 0.5f, 1f), true, 4f); // BRIGHTER purple
-        CreateMaterial("AccentCyan", new Color(0.4f, 1f, 1f), true, 5f); // BRIGHTER cyan
+        // SHADCN YELLOW/GREEN THEME (Converted from OKLCH to RGB)
+        // Primary: oklch(0.852 0.199 91.936) → Bright Yellow-Green
+        // Destructive: oklch(0.577 0.245 27.325) → Orange-Red
+        // Chart colors for variety
+        
+        CreateMaterial("FloorDark", new Color(0.12f, 0.12f, 0.14f), false); // Dark background
+        CreateMaterial("WallGlow", new Color(0.85f, 0.88f, 0.45f), true, 4f); // Primary yellow-green
+        CreateMaterial("ObstacleRed", new Color(0.95f, 0.45f, 0.35f), true, 3f); // Destructive orange-red
+        CreateMaterial("CollectibleGreen", new Color(0.75f, 0.92f, 0.45f), true, 5f); // Chart-2 bright green
+        CreateMaterial("PlayerGlow", new Color(0.92f, 0.85f, 0.50f), true, 4f); // Chart-1 golden yellow
+        CreateMaterial("AccentCyan", new Color(0.65f, 0.82f, 0.48f), true, 4f); // Chart-3 lime green
     }
 
     static void CreateMaterial(string name, Color color, bool emissive, float glowIntensity = 2f)
@@ -101,8 +105,8 @@ public class HeadlessBuilder
         {
             mat.EnableKeyword("_EMISSION");
             mat.SetColor("_EmissionColor", color * glowIntensity);
-            mat.SetFloat("_Glossiness", 0.9f); // Even shinier
-            mat.SetFloat("_Metallic", 0.4f); // More metallic
+            mat.SetFloat("_Glossiness", 0.9f);
+            mat.SetFloat("_Metallic", 0.4f);
         }
         else
         {
