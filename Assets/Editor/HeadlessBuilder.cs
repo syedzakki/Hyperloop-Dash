@@ -105,98 +105,83 @@ public class HeadlessBuilder
     {
         if (!Directory.Exists("Assets/Prefabs")) AssetDatabase.CreateFolder("Assets", "Prefabs");
 
-        // 1. PROPER 3D TUNNEL SEGMENT (Cylindrical)
+        // 1. SIMPLIFIED WORKING TUNNEL (Track with walls)
         GameObject tunnel = new GameObject("TunnelSegment");
         
-        // Create cylinder for tunnel walls
-        GameObject tunnelWall = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        tunnelWall.name = "TunnelWall";
-        tunnelWall.transform.SetParent(tunnel.transform);
-        tunnelWall.transform.localPosition = Vector3.zero;
-        tunnelWall.transform.localRotation = Quaternion.Euler(0, 0, 90); // Rotate to align with Z-axis
-        tunnelWall.transform.localScale = new Vector3(8, 10, 8); // Radius 8, length 20
+        // Floor
+        GameObject floor = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        floor.name = "Floor";
+        floor.transform.SetParent(tunnel.transform);
+        floor.transform.localPosition = new Vector3(0, -0.5f, 0);
+        floor.transform.localScale = new Vector3(10, 0.2f, 20);
+        floor.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/DarkFloor.mat");
+        Object.DestroyImmediate(floor.GetComponent<Collider>());
         
-        // Invert normals by scaling negatively (so we see inside)
-        MeshFilter mf = tunnelWall.GetComponent<MeshFilter>();
-        Mesh mesh = Object.Instantiate(mf.sharedMesh);
-        Vector3[] normals = mesh.normals;
-        for (int i = 0; i < normals.Length; i++)
-        {
-            normals[i] = -normals[i];
-        }
-        mesh.normals = normals;
+        // Left Wall
+        GameObject leftWall = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        leftWall.name = "LeftWall";
+        leftWall.transform.SetParent(tunnel.transform);
+        leftWall.transform.localPosition = new Vector3(-5, 2, 0);
+        leftWall.transform.localScale = new Vector3(0.5f, 5, 20);
+        leftWall.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonBlue.mat");
+        Object.DestroyImmediate(leftWall.GetComponent<Collider>());
         
-        // Reverse triangle winding
-        for (int m = 0; m < mesh.subMeshCount; m++)
-        {
-            int[] triangles = mesh.GetTriangles(m);
-            for (int i = 0; i < triangles.Length; i += 3)
-            {
-                int temp = triangles[i];
-                triangles[i] = triangles[i + 1];
-                triangles[i + 1] = temp;
-            }
-            mesh.SetTriangles(triangles, m);
-        }
+        // Right Wall
+        GameObject rightWall = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        rightWall.name = "RightWall";
+        rightWall.transform.SetParent(tunnel.transform);
+        rightWall.transform.localPosition = new Vector3(5, 2, 0);
+        rightWall.transform.localScale = new Vector3(0.5f, 5, 20);
+        rightWall.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonBlue.mat");
+        Object.DestroyImmediate(rightWall.GetComponent<Collider>());
         
-        mf.mesh = mesh;
-        
-        // Apply neon material to tunnel walls
-        tunnelWall.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonBlue.mat");
-        
-        // Remove collider from walls (we don't want player colliding with tunnel)
-        Object.DestroyImmediate(tunnelWall.GetComponent<Collider>());
-        
-        // Add some ring lights for depth perception
-        for (int i = 0; i < 3; i++)
-        {
-            GameObject ring = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-            ring.name = $"Ring{i}";
-            ring.transform.SetParent(tunnel.transform);
-            ring.transform.localPosition = new Vector3(0, 0, -8 + (i * 8));
-            ring.transform.localRotation = Quaternion.Euler(0, 0, 90);
-            ring.transform.localScale = new Vector3(7, 0.2f, 7); // Thin ring
-            ring.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonGreen.mat");
-            Object.DestroyImmediate(ring.GetComponent<Collider>());
-        }
+        // Ceiling (optional, for enclosed feel)
+        GameObject ceiling = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        ceiling.name = "Ceiling";
+        ceiling.transform.SetParent(tunnel.transform);
+        ceiling.transform.localPosition = new Vector3(0, 4.5f, 0);
+        ceiling.transform.localScale = new Vector3(10, 0.2f, 20);
+        ceiling.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/DarkFloor.mat");
+        Object.DestroyImmediate(ceiling.GetComponent<Collider>());
         
         PrefabUtility.SaveAsPrefabAsset(tunnel, "Assets/Prefabs/TunnelSegment.prefab");
         Object.DestroyImmediate(tunnel);
 
-        // 2. Obstacle (Generic)
+        // 2. Obstacle (Properly scaled)
         GameObject obs = GameObject.CreatePrimitive(PrimitiveType.Cube);
         obs.name = "Obstacle_Debris";
         obs.tag = "Obstacle";
-        obs.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        obs.transform.localScale = new Vector3(1, 1, 1);
         obs.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonRed.mat");
         obs.AddComponent<HyperloopDash.Gameplay.Obstacle>();
         obs.GetComponent<BoxCollider>().isTrigger = true;
         PrefabUtility.SaveAsPrefabAsset(obs, "Assets/Prefabs/Obstacle_Debris.prefab");
         Object.DestroyImmediate(obs);
 
-        // 3. Collectible (Larger, more visible)
+        // 3. Collectible
         GameObject orb = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         orb.name = "EnergyOrb";
         orb.tag = "Collectible";
-        orb.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+        orb.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         orb.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonGreen.mat");
         orb.AddComponent<HyperloopDash.Gameplay.Collectible>();
         orb.GetComponent<SphereCollider>().isTrigger = true;
         PrefabUtility.SaveAsPrefabAsset(orb, "Assets/Prefabs/EnergyOrb.prefab");
         Object.DestroyImmediate(orb);
 
-        // 4. SignalBar (Horizontal barrier)
+        // 4. SignalBar
         GameObject bar = GameObject.CreatePrimitive(PrimitiveType.Cube);
         bar.name = "Obstacle_Bar";
         bar.tag = "SignalBar";
-        bar.transform.localScale = new Vector3(6, 0.5f, 0.5f);
+        bar.transform.localScale = new Vector3(8, 0.3f, 0.3f);
+        bar.transform.position = new Vector3(0, 1, 0);
         bar.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonRed.mat");
         bar.AddComponent<HyperloopDash.Gameplay.SignalBar>();
         bar.GetComponent<BoxCollider>().isTrigger = true;
         PrefabUtility.SaveAsPrefabAsset(bar, "Assets/Prefabs/Obstacle_Bar.prefab");
         Object.DestroyImmediate(bar);
 
-        // 5. GateBlocker (3 lanes)
+        // 5. GateBlocker
         GameObject gate = new GameObject("Obstacle_Blocker");
         gate.tag = "Obstacle";
         gate.AddComponent<HyperloopDash.Gameplay.GateBlocker>();
@@ -206,8 +191,8 @@ public class HeadlessBuilder
         {
             GameObject block = GameObject.CreatePrimitive(PrimitiveType.Cube);
             block.transform.SetParent(gate.transform);
-            float x = (i - 1) * 2.5f; // Adjusted for tunnel width
-            block.transform.localPosition = new Vector3(x, 0, 0);
+            float x = (i - 1) * 3f; // -3, 0, 3
+            block.transform.localPosition = new Vector3(x, 1, 0);
             block.transform.localScale = new Vector3(2, 2, 0.5f);
             block.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonRed.mat");
             block.GetComponent<BoxCollider>().isTrigger = true;
@@ -255,22 +240,27 @@ public class HeadlessBuilder
         AddPoolItem(pooler, "Obstacle_Blocker", "Assets/Prefabs/Obstacle_Blocker.prefab", 10);
         AddPoolItem(pooler, "EnergyOrb", "Assets/Prefabs/EnergyOrb.prefab", 20);
 
-        // 4. Player (Smaller capsule for tunnel scale)
+        // 4. Player (Proper scale for track)
         GameObject player = GameObject.CreatePrimitive(PrimitiveType.Capsule);
         player.name = "Player";
         player.tag = "Player";
-        player.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+        player.transform.position = new Vector3(0, 0.5f, 0); // Start above floor
+        player.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
         CharacterController cc = player.AddComponent<CharacterController>();
+        cc.center = new Vector3(0, 0.5f, 0);
+        cc.radius = 0.3f;
+        cc.height = 1.2f;
+        
         PlayerController pc = player.AddComponent<PlayerController>();
         pc.crashParticles = null;
-        pc.laneDistance = 2.5f; // Adjusted for tunnel width
+        pc.laneDistance = 3f; // 3 lanes: -3, 0, 3
         
-        // Camera with follow controller (behind player for 3D view)
+        // Camera with follow controller
         CameraController camController = cam.AddComponent<CameraController>();
         camController.target = player.transform;
-        camController.offset = new Vector3(0, 3, -8); // Behind and above
-        camController.smoothSpeed = 8f;
-        camController.lookAtTarget = true;
+        camController.offset = new Vector3(0, 4, -6); // Higher and closer
+        camController.smoothSpeed = 10f;
+        camController.lookAtTarget = false; // Keep camera angle fixed
         
         // Add SwipeInput to managers
         managers.AddComponent<HyperloopDash.Helpers.SwipeInput>();

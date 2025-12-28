@@ -36,6 +36,13 @@ namespace HyperloopDash.Helpers
         
         void Update()
         {
+            // Retry with R key
+            if (Input.GetKeyDown(KeyCode.R) || (Input.touchCount >= 3))
+            {
+                Debug.Log("RETRY - Reloading scene...");
+                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            }
+            
             // Also visualize input touches
             if (Input.touchCount > 0)
             {
