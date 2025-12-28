@@ -240,7 +240,11 @@ public class HeadlessBuilder
         GameObject canvasObj = new GameObject("Canvas");
         Canvas canvas = canvasObj.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvasObj.AddComponent<UnityEngine.UI.CanvasScaler>().uiScaleMode = UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        UnityEngine.UI.CanvasScaler scaler = canvasObj.AddComponent<UnityEngine.UI.CanvasScaler>();
+        scaler.uiScaleMode = UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.referenceResolution = new Vector2(1080, 1920); // Portrait
+        scaler.matchWidthOrHeight = 0.5f;
+
         canvasObj.AddComponent<UnityEngine.UI.GraphicRaycaster>();
         
         GameObject eventSystem = new GameObject("EventSystem");
@@ -282,6 +286,9 @@ public class HeadlessBuilder
         uiManager.doubleEnergyButton.transform.localPosition = new Vector3(200, -100, 0);
         uiManager.doubleEnergyButton.onClick.AddListener(uiManager.OnDoubleEnergyClicked);
 
+        // Force Portrait
+        PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
+
         // Save Scene
         if (!Directory.Exists("Assets/Scenes")) AssetDatabase.CreateFolder("Assets", "Scenes");
         EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene(), "Assets/Scenes/Main.unity");
@@ -314,15 +321,17 @@ public class HeadlessBuilder
         return panel;
     }
 
-    static TMPro.TextMeshProUGUI CreateText(GameObject parent, string name, string content, Vector2 anchorMin, Vector2 anchorMax, Vector2 anchoredPos)
+    static UnityEngine.UI.Text CreateText(GameObject parent, string name, string content, Vector2 anchorMin, Vector2 anchorMax, Vector2 anchoredPos)
     {
         GameObject obj = new GameObject(name);
         obj.transform.SetParent(parent.transform, false);
-        TMPro.TextMeshProUGUI txt = obj.AddComponent<TMPro.TextMeshProUGUI>();
+        UnityEngine.UI.Text txt = obj.AddComponent<UnityEngine.UI.Text>();
         txt.text = content;
         txt.fontSize = 36;
         txt.color = Color.white;
-        txt.alignment = TMPro.TextAlignmentOptions.Center;
+        txt.alignment = TextAnchor.MiddleCenter;
+        txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        
         RectTransform rt = obj.GetComponent<RectTransform>();
         rt.anchorMin = anchorMin;
         rt.anchorMax = anchorMax;
@@ -341,11 +350,12 @@ public class HeadlessBuilder
         
         GameObject textObj = new GameObject("Text");
         textObj.transform.SetParent(btnObj.transform, false);
-        TMPro.TextMeshProUGUI txt = textObj.AddComponent<TMPro.TextMeshProUGUI>();
+        UnityEngine.UI.Text txt = textObj.AddComponent<UnityEngine.UI.Text>();
         txt.text = label;
         txt.fontSize = 24;
         txt.color = Color.black;
-        txt.alignment = TMPro.TextAlignmentOptions.Center;
+        txt.alignment = TextAnchor.MiddleCenter;
+        txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
         
         RectTransform rt = btnObj.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(200, 60);

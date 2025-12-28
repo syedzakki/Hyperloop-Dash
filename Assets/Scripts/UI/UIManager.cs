@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Assuming TextMeshPro is used, fallback to standard Text if needed but TMPro is standard now.
 using HyperloopDash.Managers;
 
 namespace HyperloopDash.UI
@@ -13,13 +12,13 @@ namespace HyperloopDash.UI
         public GameObject gameOverPanel;
 
         [Header("HUD Elements")]
-        public TextMeshProUGUI scoreText;
-        public TextMeshProUGUI energyText;
-        public TextMeshProUGUI comboText;
+        public Text scoreText;
+        public Text energyText;
+        public Text comboText;
 
         [Header("Game Over Elements")]
-        public TextMeshProUGUI finalScoreText;
-        public TextMeshProUGUI bestScoreText;
+        public Text finalScoreText;
+        public Text bestScoreText;
         public Button reviveButton;
         public Button doubleEnergyButton;
 
