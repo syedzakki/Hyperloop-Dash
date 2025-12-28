@@ -83,17 +83,21 @@ public class HeadlessBuilder
     {
         if (!Directory.Exists("Assets/Materials")) AssetDatabase.CreateFolder("Assets", "Materials");
 
-        // SHADCN YELLOW/GREEN THEME (Converted from OKLCH to RGB)
-        // Primary: oklch(0.852 0.199 91.936) → Bright Yellow-Green
-        // Destructive: oklch(0.577 0.245 27.325) → Orange-Red
-        // Chart colors for variety
+        // HIGH CONTRAST THEME - Obstacles vs Collectibles VERY distinct
+        CreateMaterial("FloorDark", new Color(0.15f, 0.15f, 0.18f), false); // Dark floor
+        CreateMaterial("WallGlow", new Color(0.3f, 0.5f, 0.8f), true, 3f); // Blue walls
         
-        CreateMaterial("FloorDark", new Color(0.12f, 0.12f, 0.14f), false); // Dark background
-        CreateMaterial("WallGlow", new Color(0.85f, 0.88f, 0.45f), true, 4f); // Primary yellow-green
-        CreateMaterial("ObstacleRed", new Color(0.95f, 0.45f, 0.35f), true, 3f); // Destructive orange-red
-        CreateMaterial("CollectibleGreen", new Color(0.75f, 0.92f, 0.45f), true, 5f); // Chart-2 bright green
-        CreateMaterial("PlayerGlow", new Color(0.92f, 0.85f, 0.50f), true, 4f); // Chart-1 golden yellow
-        CreateMaterial("AccentCyan", new Color(0.65f, 0.82f, 0.48f), true, 4f); // Chart-3 lime green
+        // OBSTACLES - PURE BRIGHT RED (Danger!)
+        CreateMaterial("ObstacleRed", new Color(1f, 0.1f, 0.1f), true, 6f); // VERY RED
+        
+        // COLLECTIBLES - PURE BRIGHT YELLOW/GOLD (Reward!)
+        CreateMaterial("CollectibleGreen", new Color(1f, 0.9f, 0.1f), true, 7f); // BRIGHT GOLD
+        
+        // PLAYER - White/Silver (Neutral, visible)
+        CreateMaterial("PlayerGlow", new Color(0.9f, 0.9f, 0.95f), true, 3f); // Bright white
+        
+        // ACCENTS - Cyan strips
+        CreateMaterial("AccentCyan", new Color(0.2f, 0.8f, 0.9f), true, 4f); // Cyan
     }
 
     static void CreateMaterial(string name, Color color, bool emissive, float glowIntensity = 2f)
@@ -270,29 +274,91 @@ public class HeadlessBuilder
         AddPoolItem(pooler, "Obstacle_Blocker", "Assets/Prefabs/Obstacle_Blocker.prefab", 10);
         AddPoolItem(pooler, "EnergyOrb", "Assets/Prefabs/EnergyOrb.prefab", 20);
 
-        // 4. Premium Player
-        GameObject player = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-        player.name = "Player";
+        // 4. STICK FIGURE PLAYER
+        GameObject player = new GameObject("Player");
         player.tag = "Player";
         player.transform.position = new Vector3(0, 0.6f, 0);
-        player.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
         
-        // Apply glowing material
-        player.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/PlayerGlow.mat");
-        
+        // Add CharacterController
         CharacterController cc = player.AddComponent<CharacterController>();
-        cc.center = new Vector3(0, 0.6f, 0);
-        cc.radius = 0.35f;
-        cc.height = 1.4f;
+        cc.center = new Vector3(0, 0.9f, 0);
+        cc.radius = 0.3f;
+        cc.height = 1.8f;
         
+        // Create stick figure body parts
+        // Head
+        GameObject head = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        head.name = "Head";
+        head.transform.SetParent(player.transform);
+        head.transform.localPosition = new Vector3(0, 1.5f, 0);
+        head.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+        head.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/PlayerGlow.mat");
+        Object.DestroyImmediate(head.GetComponent<Collider>());
+        
+        // Body (torso)
+        GameObject body = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        body.name = "Body";
+        body.transform.SetParent(player.transform);
+        body.transform.localPosition = new Vector3(0, 1f, 0);
+        body.transform.localScale = new Vector3(0.15f, 0.4f, 0.15f);
+        body.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/PlayerGlow.mat");
+        Object.DestroyImmediate(body.GetComponent<Collider>());
+        
+        // Left Leg
+        GameObject leftLeg = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        leftLeg.name = "LeftLeg";
+        leftLeg.transform.SetParent(player.transform);
+        leftLeg.transform.localPosition = new Vector3(-0.1f, 0.4f, 0);
+        leftLeg.transform.localScale = new Vector3(0.1f, 0.4f, 0.1f);
+        leftLeg.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/PlayerGlow.mat");
+        Object.DestroyImmediate(leftLeg.GetComponent<Collider>());
+        
+        // Right Leg
+        GameObject rightLeg = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        rightLeg.name = "RightLeg";
+        rightLeg.transform.SetParent(player.transform);
+        rightLeg.transform.localPosition = new Vector3(0.1f, 0.4f, 0);
+        rightLeg.transform.localScale = new Vector3(0.1f, 0.4f, 0.1f);
+        rightLeg.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/PlayerGlow.mat");
+        Object.DestroyImmediate(rightLeg.GetComponent<Collider>());
+        
+        // Left Arm
+        GameObject leftArm = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        leftArm.name = "LeftArm";
+        leftArm.transform.SetParent(player.transform);
+        leftArm.transform.localPosition = new Vector3(-0.25f, 1.2f, 0);
+        leftArm.transform.localScale = new Vector3(0.08f, 0.3f, 0.08f);
+        leftArm.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/PlayerGlow.mat");
+        Object.DestroyImmediate(leftArm.GetComponent<Collider>());
+        
+        // Right Arm
+        GameObject rightArm = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        rightArm.name = "RightArm";
+        rightArm.transform.SetParent(player.transform);
+        rightArm.transform.localPosition = new Vector3(0.25f, 1.2f, 0);
+        rightArm.transform.localScale = new Vector3(0.08f, 0.3f, 0.08f);
+        rightArm.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/PlayerGlow.mat");
+        Object.DestroyImmediate(rightArm.GetComponent<Collider>());
+        
+        // Add PlayerController
         PlayerController pc = player.AddComponent<PlayerController>();
         pc.crashParticles = null;
         pc.laneDistance = 3f;
         
+        // Add StickFigureAnimator
+        StickFigureAnimator animator = player.AddComponent<StickFigureAnimator>();
+        animator.leftLeg = leftLeg.transform;
+        animator.rightLeg = rightLeg.transform;
+        animator.leftArm = leftArm.transform;
+        animator.rightArm = rightArm.transform;
+        animator.runSpeed = 8f;
+        animator.legSwingAngle = 45f;
+        animator.armSwingAngle = 30f;
+        
         // Cinematic camera
         CameraController camController = cam.AddComponent<CameraController>();
         camController.target = player.transform;
-        camController.offset = new Vector3(0, 3.5f, -7); // Slightly lower, further back
+        camController.offset = new Vector3(0, 3.5f, -7);
         camController.smoothSpeed = 12f;
         camController.lookAtTarget = false;
         
