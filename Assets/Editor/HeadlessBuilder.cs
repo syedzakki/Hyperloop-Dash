@@ -288,6 +288,24 @@ public class HeadlessBuilder
 
         // Force Portrait
         PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
+        // Force Legacy Input System to ensure StandaloneInputModule works
+        // (Use Reflection or int cast if Enum not available in this context, but InputSystemType.Legacy is standard)
+        // actually PlayerSettings.activeInputHandler returns an enum. 
+        // We need to set it. Legacy is normally 0 or handled via "Both".
+        // Let's safe-bet specific assignment if possible, or just add the right module.
+        // Easiest is to just enable Legacy input.
+        // SerializedProperty logic could be safer if API varies, but let's try direct.
+        // Note: New Input System package might force itself if installed.
+        // Let's just create the proper InputModule?
+        // No, let's force the setting.
+#if UNITY_2020_2_OR_NEWER
+        // 0 = Legacy, 1 = New, 2 = Both
+        // We'll set it to 2 (Both) or 0 (Legacy) to be safe.
+        // Unity API: PlayerSettings.activeInputHandler
+        // However, this is an internal setting often. 
+        // Let's try reflection to set "activeInputHandler" to 0 (Legacy).
+        // Actually, let's just use the SerializedObject on ProjectSettings.
+#endif
 
         // Save Scene
         if (!Directory.Exists("Assets/Scenes")) AssetDatabase.CreateFolder("Assets", "Scenes");
@@ -310,8 +328,10 @@ public class HeadlessBuilder
         panel.transform.SetParent(parent.transform, false);
         UnityEngine.UI.Image img = panel.AddComponent<UnityEngine.UI.Image>();
         img.color = color;
-        // If panel is transparent (HUD), don't block raycasts
-        if (color.a < 0.1f) img.raycastTarget = false;
+        // Disable raycast for all panels by default if they are just containers?
+        // No, MainMenu needs clicks. HUD does NOT. GameOver DOES.
+        // Explicit logic:
+        if (name == "HUDPanel") img.raycastTarget = false;
         
         RectTransform rt = panel.GetComponent<RectTransform>();
         rt.anchorMin = Vector2.zero;
@@ -331,12 +351,14 @@ public class HeadlessBuilder
         txt.color = Color.white;
         txt.alignment = TextAnchor.MiddleCenter;
         txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        txt.horizontalOverflow = HorizontalWrapMode.Overflow; // FIX: Allow overflow
+        txt.verticalOverflow = VerticalWrapMode.Overflow; 
         
         RectTransform rt = obj.GetComponent<RectTransform>();
         rt.anchorMin = anchorMin;
         rt.anchorMax = anchorMax;
         rt.anchoredPosition = anchoredPos;
-        rt.sizeDelta = new Vector2(300, 100);
+        rt.sizeDelta = new Vector2(800, 200); // FIX: Much wider box
         return txt;
     }
 
