@@ -10,7 +10,7 @@ namespace HyperloopDash.Helpers
         public static event Action OnSwipeDown;
         public static event Action OnSwipeUp; // Not used but good to have
 
-        [SerializeField] private float minSwipeDistance = 50f;
+        [SerializeField] private float minSwipeDistance = 30f; // Lowered for better mobile response
 
         private Vector2 _fingerDown;
         private Vector2 _fingerUp;

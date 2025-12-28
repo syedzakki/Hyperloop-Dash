@@ -325,7 +325,10 @@ public class HeadlessBuilder
         // Panels
         GameObject mainMenu = CreatePanel(canvasObj, "MainMenuPanel", Color.black);
         GameObject hud = CreatePanel(canvasObj, "HUDPanel", Color.clear);
-        GameObject gameOver = CreatePanel(canvasObj, "GameOverPanel", new Color(0,0,0, 0.8f));
+        GameObject gameOver = CreatePanel(canvasObj, "GameOverPanel", new Color(0,0,0, 0.85f));
+        
+        // CRITICAL FIX: Game Over panel should NOT block raycasts - only background
+        gameOver.GetComponent<UnityEngine.UI.Image>().raycastTarget = false;
         
         // Fix: Disable non-menu panels immediately in the serialized scene
         hud.SetActive(false);
@@ -362,34 +365,43 @@ public class HeadlessBuilder
         UnityEngine.UI.Button playBtn = CreateButton(mainMenu, "PlayButton", "PLAY");
         playBtn.onClick.AddListener(uiManager.OnPlayClicked);
 
-        // Fill Game Over (IMPROVED LAYOUT)
-        uiManager.finalScoreText = CreateText(gameOver, "Score", "SCORE: 0", new Vector2(0.5f, 0.75f), new Vector2(0.5f, 0.75f), Vector2.zero);
-        uiManager.finalScoreText.fontSize = 48;
+        // Fill Game Over (FIXED LAYOUT - Proper anchoring)
+        uiManager.finalScoreText = CreateText(gameOver, "Score", "SCORE: 0", new Vector2(0.5f, 0.7f), new Vector2(0.5f, 0.7f), Vector2.zero);
+        uiManager.finalScoreText.fontSize = 56;
         
-        uiManager.bestScoreText = CreateText(gameOver, "Best", "BEST: 0", new Vector2(0.5f, 0.65f), new Vector2(0.5f, 0.65f), Vector2.zero);
-        uiManager.bestScoreText.fontSize = 32;
+        uiManager.bestScoreText = CreateText(gameOver, "Best", "BEST: 0", new Vector2(0.5f, 0.6f), new Vector2(0.5f, 0.6f), Vector2.zero);
+        uiManager.bestScoreText.fontSize = 36;
         uiManager.bestScoreText.color = new Color(0.7f, 0.7f, 0.7f);
         
-        // RESTART button (Primary, centered, larger)
-        UnityEngine.UI.Button restartBtn = CreateButton(gameOver, "RestartButton", "RESTART");
-        restartBtn.transform.localPosition = new Vector3(0, -50, 0);
+        // RESTART button (Primary, centered, PROPERLY ANCHORED)
+        UnityEngine.UI.Button restartBtn = CreateButton(gameOver, "RestartButton", "TAP TO RESTART");
         RectTransform restartRT = restartBtn.GetComponent<RectTransform>();
-        restartRT.sizeDelta = new Vector2(250, 70); // Bigger button
-        restartBtn.GetComponent<UnityEngine.UI.Image>().color = new Color(0.4f, 0.7f, 1f); // Blue
+        restartRT.anchorMin = new Vector2(0.5f, 0.4f);
+        restartRT.anchorMax = new Vector2(0.5f, 0.4f);
+        restartRT.anchoredPosition = Vector2.zero;
+        restartRT.sizeDelta = new Vector2(300, 80);
+        restartBtn.GetComponent<UnityEngine.UI.Image>().color = new Color(0.4f, 0.7f, 1f);
         restartBtn.onClick.AddListener(uiManager.OnRestartClicked);
         
-        // Revive button (Secondary, left)
-        uiManager.reviveButton = CreateButton(gameOver, "ReviveButton", "REVIVE");
-        uiManager.reviveButton.transform.localPosition = new Vector3(-150, -150, 0);
-        uiManager.reviveButton.GetComponent<UnityEngine.UI.Image>().color = new Color(0.3f, 1f, 0.6f); // Green
+        // Revive button (Secondary, below restart)
+        uiManager.reviveButton = CreateButton(gameOver, "ReviveButton", "REVIVE (AD)");
+        RectTransform reviveRT = uiManager.reviveButton.GetComponent<RectTransform>();
+        reviveRT.anchorMin = new Vector2(0.25f, 0.25f);
+        reviveRT.anchorMax = new Vector2(0.25f, 0.25f);
+        reviveRT.anchoredPosition = Vector2.zero;
+        reviveRT.sizeDelta = new Vector2(180, 60);
+        uiManager.reviveButton.GetComponent<UnityEngine.UI.Image>().color = new Color(0.3f, 1f, 0.6f);
         uiManager.reviveButton.onClick.AddListener(uiManager.OnReviveClicked);
         
-        // Double Energy button (Secondary, right)
+        // Double Energy button (Secondary, below restart)
         uiManager.doubleEnergyButton = CreateButton(gameOver, "DoubleEnergyButton", "x2 ENERGY");
-        uiManager.doubleEnergyButton.transform.localPosition = new Vector3(150, -150, 0);
-        uiManager.doubleEnergyButton.GetComponent<UnityEngine.UI.Image>().color = new Color(1f, 0.8f, 0.3f); // Gold
+        RectTransform doubleRT = uiManager.doubleEnergyButton.GetComponent<RectTransform>();
+        doubleRT.anchorMin = new Vector2(0.75f, 0.25f);
+        doubleRT.anchorMax = new Vector2(0.75f, 0.25f);
+        doubleRT.anchoredPosition = Vector2.zero;
+        doubleRT.sizeDelta = new Vector2(180, 60);
+        uiManager.doubleEnergyButton.GetComponent<UnityEngine.UI.Image>().color = new Color(1f, 0.8f, 0.3f);
         uiManager.doubleEnergyButton.onClick.AddListener(uiManager.OnDoubleEnergyClicked);
-
 
         // Force Portrait
         PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;

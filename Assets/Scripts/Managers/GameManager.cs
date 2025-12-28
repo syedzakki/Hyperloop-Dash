@@ -102,6 +102,7 @@ namespace HyperloopDash.Managers
 
         public void GameOver()
         {
+            Time.timeScale = 1f; // CRITICAL: Reset time scale in case brake was active
             ChangeState(GameState.GameOver);
             
             // Save Best Score
@@ -109,6 +110,7 @@ namespace HyperloopDash.Managers
             if ((int)Score > bestScore)
             {
                 PlayerPrefs.SetInt("BestScore", (int)Score);
+                PlayerPrefs.Save();
             }
 
             // Save Total Energy
