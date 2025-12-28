@@ -303,6 +303,9 @@ public class HeadlessBuilder
         panel.transform.SetParent(parent.transform, false);
         UnityEngine.UI.Image img = panel.AddComponent<UnityEngine.UI.Image>();
         img.color = color;
+        // If panel is transparent (HUD), don't block raycasts
+        if (color.a < 0.1f) img.raycastTarget = false;
+        
         RectTransform rt = panel.GetComponent<RectTransform>();
         rt.anchorMin = Vector2.zero;
         rt.anchorMax = Vector2.one;

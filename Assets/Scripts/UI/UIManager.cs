@@ -30,9 +30,11 @@ namespace HyperloopDash.UI
             GameManager.Instance.OnEnergyUpdated += UpdateEnergy;
             GameManager.Instance.OnComboUpdated += UpdateCombo;
 
-            // Initialize Button Listeners
-            // Note: These should be linked in Inspector or here. 
-            // For code completeness, we assign them if not null.
+            // Force update UI to current state (Main Menu) to ensure other panels are hidden
+            if (GameManager.Instance != null)
+            {
+                HandleStateChanged(GameManager.Instance.CurrentState);
+            }
         }
 
         private void OnDestroy()
