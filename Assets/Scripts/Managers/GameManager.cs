@@ -59,7 +59,19 @@ namespace HyperloopDash.Managers
 
         private void Update()
         {
-            if (CurrentState == GameState.Playing)
+            // "Tap to Play" - Allow any screen tap to start game from main menu
+            if (CurrentState == GameState.MainMenu)
+            {
+                bool tapped = Input.GetMouseButtonDown(0) || 
+                             (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
+                
+                if (tapped)
+                {
+                    Debug.Log("TAP DETECTED - Starting Game!");
+                    StartGame();
+                }
+            }
+            else if (CurrentState == GameState.Playing)
             {
                 UpdateGameplay();
             }
