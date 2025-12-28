@@ -83,21 +83,38 @@ public class HeadlessBuilder
     {
         if (!Directory.Exists("Assets/Materials")) AssetDatabase.CreateFolder("Assets", "Materials");
 
-        CreateMaterial("NeonRed", Color.red, true);
-        CreateMaterial("NeonBlue", Color.cyan, true);
-        CreateMaterial("NeonGreen", Color.green, true);
-        CreateMaterial("DarkFloor", Color.black, false);
+        // Modern color palette inspired by Shadcn/Tailwind
+        // Primary: Vibrant Purple/Blue gradient
+        // Accent: Cyan/Teal
+        // Danger: Soft Red
+        // Success: Emerald Green
+        
+        CreateMaterial("FloorDark", new Color(0.05f, 0.05f, 0.08f), false); // Very dark blue-gray
+        CreateMaterial("WallGlow", new Color(0.4f, 0.6f, 1f), true, 3f); // Soft blue glow
+        CreateMaterial("ObstacleRed", new Color(1f, 0.3f, 0.4f), true, 2f); // Soft red with glow
+        CreateMaterial("CollectibleGreen", new Color(0.3f, 1f, 0.6f), true, 4f); // Bright emerald
+        CreateMaterial("PlayerGlow", new Color(0.6f, 0.4f, 1f), true, 2f); // Purple glow
+        CreateMaterial("AccentCyan", new Color(0.3f, 0.9f, 1f), true, 3f); // Cyan accent
     }
 
-    static void CreateMaterial(string name, Color color, bool emissive)
+    static void CreateMaterial(string name, Color color, bool emissive, float glowIntensity = 2f)
     {
         Material mat = new Material(Shader.Find("Standard"));
         mat.color = color;
+        
         if (emissive)
         {
             mat.EnableKeyword("_EMISSION");
-            mat.SetColor("_EmissionColor", color * 2f);
+            mat.SetColor("_EmissionColor", color * glowIntensity);
+            mat.SetFloat("_Glossiness", 0.8f); // Shiny
+            mat.SetFloat("_Metallic", 0.3f); // Slight metallic
         }
+        else
+        {
+            mat.SetFloat("_Glossiness", 0.2f);
+            mat.SetFloat("_Metallic", 0.1f);
+        }
+        
         AssetDatabase.CreateAsset(mat, "Assets/Materials/" + name + ".mat");
     }
 
@@ -105,7 +122,7 @@ public class HeadlessBuilder
     {
         if (!Directory.Exists("Assets/Prefabs")) AssetDatabase.CreateFolder("Assets", "Prefabs");
 
-        // 1. SIMPLIFIED WORKING TUNNEL (Track with walls)
+        // 1. PREMIUM TUNNEL DESIGN
         GameObject tunnel = new GameObject("TunnelSegment");
         
         // Floor
@@ -114,7 +131,7 @@ public class HeadlessBuilder
         floor.transform.SetParent(tunnel.transform);
         floor.transform.localPosition = new Vector3(0, -0.5f, 0);
         floor.transform.localScale = new Vector3(10, 0.2f, 20);
-        floor.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/DarkFloor.mat");
+        floor.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/FloorDark.mat");
         Object.DestroyImmediate(floor.GetComponent<Collider>());
         
         // Left Wall
@@ -122,8 +139,8 @@ public class HeadlessBuilder
         leftWall.name = "LeftWall";
         leftWall.transform.SetParent(tunnel.transform);
         leftWall.transform.localPosition = new Vector3(-5, 2, 0);
-        leftWall.transform.localScale = new Vector3(0.5f, 5, 20);
-        leftWall.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonBlue.mat");
+        leftWall.transform.localScale = new Vector3(0.3f, 5, 20);
+        leftWall.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/WallGlow.mat");
         Object.DestroyImmediate(leftWall.GetComponent<Collider>());
         
         // Right Wall
@@ -131,57 +148,70 @@ public class HeadlessBuilder
         rightWall.name = "RightWall";
         rightWall.transform.SetParent(tunnel.transform);
         rightWall.transform.localPosition = new Vector3(5, 2, 0);
-        rightWall.transform.localScale = new Vector3(0.5f, 5, 20);
-        rightWall.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonBlue.mat");
+        rightWall.transform.localScale = new Vector3(0.3f, 5, 20);
+        rightWall.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/WallGlow.mat");
         Object.DestroyImmediate(rightWall.GetComponent<Collider>());
         
-        // Ceiling (optional, for enclosed feel)
+        // Ceiling
         GameObject ceiling = GameObject.CreatePrimitive(PrimitiveType.Cube);
         ceiling.name = "Ceiling";
         ceiling.transform.SetParent(tunnel.transform);
         ceiling.transform.localPosition = new Vector3(0, 4.5f, 0);
         ceiling.transform.localScale = new Vector3(10, 0.2f, 20);
-        ceiling.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/DarkFloor.mat");
+        ceiling.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/FloorDark.mat");
         Object.DestroyImmediate(ceiling.GetComponent<Collider>());
+        
+        // Add glowing accent strips (like Tron)
+        for (int i = 0; i < 4; i++)
+        {
+            GameObject strip = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            strip.name = $"AccentStrip{i}";
+            strip.transform.SetParent(tunnel.transform);
+            float z = -7.5f + (i * 5f);
+            strip.transform.localPosition = new Vector3(0, -0.4f, z);
+            strip.transform.localScale = new Vector3(9, 0.05f, 0.3f);
+            strip.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/AccentCyan.mat");
+            Object.DestroyImmediate(strip.GetComponent<Collider>());
+        }
         
         PrefabUtility.SaveAsPrefabAsset(tunnel, "Assets/Prefabs/TunnelSegment.prefab");
         Object.DestroyImmediate(tunnel);
 
-        // 2. Obstacle (Properly scaled)
-        GameObject obs = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        // 2. Sleek Obstacle (rounded corners effect with sphere)
+        GameObject obs = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         obs.name = "Obstacle_Debris";
         obs.tag = "Obstacle";
-        obs.transform.localScale = new Vector3(1, 1, 1);
-        obs.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonRed.mat");
+        obs.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+        obs.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/ObstacleRed.mat");
         obs.AddComponent<HyperloopDash.Gameplay.Obstacle>();
-        obs.GetComponent<BoxCollider>().isTrigger = true;
+        obs.GetComponent<SphereCollider>().isTrigger = true;
         PrefabUtility.SaveAsPrefabAsset(obs, "Assets/Prefabs/Obstacle_Debris.prefab");
         Object.DestroyImmediate(obs);
 
-        // 3. Collectible
+        // 3. Premium Collectible (pulsing orb)
         GameObject orb = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         orb.name = "EnergyOrb";
         orb.tag = "Collectible";
-        orb.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        orb.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonGreen.mat");
+        orb.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+        orb.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/CollectibleGreen.mat");
         orb.AddComponent<HyperloopDash.Gameplay.Collectible>();
         orb.GetComponent<SphereCollider>().isTrigger = true;
         PrefabUtility.SaveAsPrefabAsset(orb, "Assets/Prefabs/EnergyOrb.prefab");
         Object.DestroyImmediate(orb);
 
-        // 4. SignalBar
+        // 4. Modern Signal Bar
         GameObject bar = GameObject.CreatePrimitive(PrimitiveType.Cube);
         bar.name = "Obstacle_Bar";
         bar.tag = "SignalBar";
-        bar.transform.localScale = new Vector3(8, 0.3f, 0.3f);
-        bar.transform.position = new Vector3(0, 1, 0);
-        bar.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonRed.mat");
+        bar.transform.localScale = new Vector3(8, 0.4f, 0.4f);
+        bar.transform.position = new Vector3(0, 1.5f, 0);
+        bar.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/ObstacleRed.mat");
         bar.AddComponent<HyperloopDash.Gameplay.SignalBar>();
         bar.GetComponent<BoxCollider>().isTrigger = true;
         PrefabUtility.SaveAsPrefabAsset(bar, "Assets/Prefabs/Obstacle_Bar.prefab");
         Object.DestroyImmediate(bar);
 
-        // 5. GateBlocker
+        // 5. Sleek Gate Blocker
         GameObject gate = new GameObject("Obstacle_Blocker");
         gate.tag = "Obstacle";
         gate.AddComponent<HyperloopDash.Gameplay.GateBlocker>();
@@ -191,10 +221,10 @@ public class HeadlessBuilder
         {
             GameObject block = GameObject.CreatePrimitive(PrimitiveType.Cube);
             block.transform.SetParent(gate.transform);
-            float x = (i - 1) * 3f; // -3, 0, 3
-            block.transform.localPosition = new Vector3(x, 1, 0);
-            block.transform.localScale = new Vector3(2, 2, 0.5f);
-            block.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/NeonRed.mat");
+            float x = (i - 1) * 3f;
+            block.transform.localPosition = new Vector3(x, 1.5f, 0);
+            block.transform.localScale = new Vector3(2.5f, 2.5f, 0.4f);
+            block.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/ObstacleRed.mat");
             block.GetComponent<BoxCollider>().isTrigger = true;
             block.tag = "Obstacle";
         }
@@ -240,27 +270,31 @@ public class HeadlessBuilder
         AddPoolItem(pooler, "Obstacle_Blocker", "Assets/Prefabs/Obstacle_Blocker.prefab", 10);
         AddPoolItem(pooler, "EnergyOrb", "Assets/Prefabs/EnergyOrb.prefab", 20);
 
-        // 4. Player (Proper scale for track)
+        // 4. Premium Player
         GameObject player = GameObject.CreatePrimitive(PrimitiveType.Capsule);
         player.name = "Player";
         player.tag = "Player";
-        player.transform.position = new Vector3(0, 0.5f, 0); // Start above floor
-        player.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+        player.transform.position = new Vector3(0, 0.6f, 0);
+        player.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+        
+        // Apply glowing material
+        player.GetComponent<Renderer>().material = AssetDatabase.LoadAssetAtPath<Material>("Assets/Materials/PlayerGlow.mat");
+        
         CharacterController cc = player.AddComponent<CharacterController>();
-        cc.center = new Vector3(0, 0.5f, 0);
-        cc.radius = 0.3f;
-        cc.height = 1.2f;
+        cc.center = new Vector3(0, 0.6f, 0);
+        cc.radius = 0.35f;
+        cc.height = 1.4f;
         
         PlayerController pc = player.AddComponent<PlayerController>();
         pc.crashParticles = null;
-        pc.laneDistance = 3f; // 3 lanes: -3, 0, 3
+        pc.laneDistance = 3f;
         
-        // Camera with follow controller
+        // Cinematic camera
         CameraController camController = cam.AddComponent<CameraController>();
         camController.target = player.transform;
-        camController.offset = new Vector3(0, 4, -6); // Higher and closer
-        camController.smoothSpeed = 10f;
-        camController.lookAtTarget = false; // Keep camera angle fixed
+        camController.offset = new Vector3(0, 3.5f, -7); // Slightly lower, further back
+        camController.smoothSpeed = 12f;
+        camController.lookAtTarget = false;
         
         // Add SwipeInput to managers
         managers.AddComponent<HyperloopDash.Helpers.SwipeInput>();
