@@ -11,6 +11,8 @@ namespace HyperloopDash.UI
         public GameObject mainMenuPanel;
         public GameObject hudPanel;
         public GameObject gameOverPanel;
+        public GameObject pausePanel;
+        public GameObject tutorialPanel;
 
         [Header("HUD Elements")]
         public Text scoreText;
@@ -53,6 +55,7 @@ namespace HyperloopDash.UI
             mainMenuPanel.SetActive(state == GameState.MainMenu);
             hudPanel.SetActive(state == GameState.Playing);
             gameOverPanel.SetActive(state == GameState.GameOver);
+            pausePanel.SetActive(state == GameState.Paused);
 
             if (state == GameState.GameOver)
             {

@@ -83,21 +83,21 @@ public class HeadlessBuilder
     {
         if (!Directory.Exists("Assets/Materials")) AssetDatabase.CreateFolder("Assets", "Materials");
 
-        // HIGH CONTRAST THEME - Obstacles vs Collectibles VERY distinct
-        CreateMaterial("FloorDark", new Color(0.15f, 0.15f, 0.18f), false); // Dark floor
-        CreateMaterial("WallGlow", new Color(0.3f, 0.5f, 0.8f), true, 3f); // Blue walls
+        // ULTRA HIGH CONTRAST - Red vs Gold
+        CreateMaterial("FloorDark", new Color(0.15f, 0.15f, 0.18f), false);
+        CreateMaterial("WallGlow", new Color(0.25f, 0.35f, 0.55f), true, 2f); // Darker blue walls
         
-        // OBSTACLES - PURE BRIGHT RED (Danger!)
-        CreateMaterial("ObstacleRed", new Color(1f, 0.1f, 0.1f), true, 6f); // VERY RED
+        // OBSTACLES - PURE RED (Maximum danger visibility)
+        CreateMaterial("ObstacleRed", new Color(1f, 0f, 0f), true, 8f); // PURE RED, 8x glow
         
-        // COLLECTIBLES - PURE BRIGHT YELLOW/GOLD (Reward!)
-        CreateMaterial("CollectibleGreen", new Color(1f, 0.9f, 0.1f), true, 7f); // BRIGHT GOLD
+        // COLLECTIBLES - PURE GOLD (Maximum reward visibility)
+        CreateMaterial("CollectibleGreen", new Color(1f, 0.84f, 0f), true, 8f); // PURE GOLD, 8x glow
         
-        // PLAYER - White/Silver (Neutral, visible)
-        CreateMaterial("PlayerGlow", new Color(0.9f, 0.9f, 0.95f), true, 3f); // Bright white
+        // PLAYER - Bright white
+        CreateMaterial("PlayerGlow", new Color(1f, 1f, 1f), true, 3f);
         
-        // ACCENTS - Cyan strips
-        CreateMaterial("AccentCyan", new Color(0.2f, 0.8f, 0.9f), true, 4f); // Cyan
+        // ACCENTS - Cyan
+        CreateMaterial("AccentCyan", new Color(0.2f, 0.8f, 0.9f), true, 3f);
     }
 
     static void CreateMaterial(string name, Color color, bool emissive, float glowIntensity = 2f)
@@ -110,12 +110,12 @@ public class HeadlessBuilder
             mat.EnableKeyword("_EMISSION");
             mat.SetColor("_EmissionColor", color * glowIntensity);
             mat.SetFloat("_Glossiness", 0.9f);
-            mat.SetFloat("_Metallic", 0.4f);
+            mat.SetFloat("_Metallic", 0.5f); // More metallic for better reflection
         }
         else
         {
-            mat.SetFloat("_Glossiness", 0.3f);
-            mat.SetFloat("_Metallic", 0.2f);
+            mat.SetFloat("_Glossiness", 0.2f);
+            mat.SetFloat("_Metallic", 0.1f);
         }
         
         AssetDatabase.CreateAsset(mat, "Assets/Materials/" + name + ".mat");
@@ -396,18 +396,26 @@ public class HeadlessBuilder
         GameObject mainMenu = CreatePanel(canvasObj, "MainMenuPanel", Color.black);
         GameObject hud = CreatePanel(canvasObj, "HUDPanel", Color.clear);
         GameObject gameOver = CreatePanel(canvasObj, "GameOverPanel", new Color(0,0,0, 0.85f));
+        GameObject pause = CreatePanel(canvasObj, "PausePanel", new Color(0,0,0, 0.9f));
+        GameObject tutorial = CreatePanel(canvasObj, "TutorialPanel", new Color(0,0,0, 0.95f));
         
         // CRITICAL FIX: Game Over panel should NOT block raycasts - only background
         gameOver.GetComponent<UnityEngine.UI.Image>().raycastTarget = false;
+        pause.GetComponent<UnityEngine.UI.Image>().raycastTarget = false;
+        tutorial.GetComponent<UnityEngine.UI.Image>().raycastTarget = false;
         
         // Fix: Disable non-menu panels immediately in the serialized scene
         hud.SetActive(false);
         gameOver.SetActive(false);
+        pause.SetActive(false);
+        tutorial.SetActive(false);
         mainMenu.SetActive(true);
         
         uiManager.mainMenuPanel = mainMenu;
         uiManager.hudPanel = hud;
         uiManager.gameOverPanel = gameOver;
+        uiManager.pausePanel = pause;
+        uiManager.tutorialPanel = tutorial;
 
         // DEBUG CONSOLE (Added for "Overhaul" request)
         GameObject debugPanel = CreatePanel(canvasObj, "DebugPanel", new Color(0,0,0, 0.2f)); // Semi-transparent

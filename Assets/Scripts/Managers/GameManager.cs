@@ -119,6 +119,24 @@ namespace HyperloopDash.Managers
             PlayerPrefs.Save();
         }
 
+        public void PauseGame()
+        {
+            if (CurrentState == GameState.Playing)
+            {
+                Time.timeScale = 0f;
+                ChangeState(GameState.Paused);
+            }
+        }
+
+        public void ResumeGame()
+        {
+            if (CurrentState == GameState.Paused)
+            {
+                Time.timeScale = 1f;
+                ChangeState(GameState.Playing);
+            }
+        }
+
         public void RevivePlayer()
         {
             // Logic to continue game
