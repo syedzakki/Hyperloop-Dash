@@ -257,7 +257,6 @@ public class HeadlessBuilder
         GameObject gameOver = CreatePanel(canvasObj, "GameOverPanel", new Color(0,0,0, 0.8f));
         
         // Fix: Disable non-menu panels immediately in the serialized scene
-        // This ensures they don't block raycasts even before scripts initialize
         hud.SetActive(false);
         gameOver.SetActive(false);
         mainMenu.SetActive(true);
@@ -265,6 +264,22 @@ public class HeadlessBuilder
         uiManager.mainMenuPanel = mainMenu;
         uiManager.hudPanel = hud;
         uiManager.gameOverPanel = gameOver;
+
+        // DEBUG CONSOLE (Added for "Overhaul" request)
+        GameObject debugPanel = CreatePanel(canvasObj, "DebugPanel", new Color(0,0,0, 0.2f)); // Semi-transparent
+        UnityEngine.UI.Text debugText = CreateText(debugPanel, "LogText", "Waiting for logs...", Vector2.zero, Vector2.one, Vector2.zero);
+        debugText.rectTransform.offsetMin = new Vector2(20, 20); // Padding
+        debugText.rectTransform.offsetMax = new Vector2(-20, -20);
+        debugText.alignment = TextAnchor.UpperLeft;
+        debugText.fontSize = 20;
+        
+        HyperloopDash.Helpers.InGameLogConsole console = debugPanel.AddComponent<HyperloopDash.Helpers.InGameLogConsole>();
+        console.logText = debugText;
+        
+        // Ensure Debug Panel is last sibling to render on top
+        debugPanel.transform.SetAsLastSibling();
+        debugPanel.GetComponent<UnityEngine.UI.Image>().raycastTarget = false; // Pass through clicks
+        debugText.raycastTarget = false;
 
         // Fill HUD
         uiManager.scoreText = CreateText(hud, "ScoreText", "SCORE: 0", new Vector2(0, 1), new Vector2(0, 1), new Vector2(50, -50));
