@@ -83,18 +83,13 @@ public class HeadlessBuilder
     {
         if (!Directory.Exists("Assets/Materials")) AssetDatabase.CreateFolder("Assets", "Materials");
 
-        // Modern color palette inspired by Shadcn/Tailwind
-        // Primary: Vibrant Purple/Blue gradient
-        // Accent: Cyan/Teal
-        // Danger: Soft Red
-        // Success: Emerald Green
-        
-        CreateMaterial("FloorDark", new Color(0.05f, 0.05f, 0.08f), false); // Very dark blue-gray
-        CreateMaterial("WallGlow", new Color(0.4f, 0.6f, 1f), true, 3f); // Soft blue glow
-        CreateMaterial("ObstacleRed", new Color(1f, 0.3f, 0.4f), true, 2f); // Soft red with glow
-        CreateMaterial("CollectibleGreen", new Color(0.3f, 1f, 0.6f), true, 4f); // Bright emerald
-        CreateMaterial("PlayerGlow", new Color(0.6f, 0.4f, 1f), true, 2f); // Purple glow
-        CreateMaterial("AccentCyan", new Color(0.3f, 0.9f, 1f), true, 3f); // Cyan accent
+        // BOOSTED color palette for better visibility
+        CreateMaterial("FloorDark", new Color(0.08f, 0.08f, 0.12f), false); // Slightly lighter
+        CreateMaterial("WallGlow", new Color(0.5f, 0.7f, 1f), true, 5f); // BRIGHTER blue
+        CreateMaterial("ObstacleRed", new Color(1f, 0.4f, 0.5f), true, 4f); // BRIGHTER red
+        CreateMaterial("CollectibleGreen", new Color(0.4f, 1f, 0.7f), true, 6f); // VERY bright green
+        CreateMaterial("PlayerGlow", new Color(0.7f, 0.5f, 1f), true, 4f); // BRIGHTER purple
+        CreateMaterial("AccentCyan", new Color(0.4f, 1f, 1f), true, 5f); // BRIGHTER cyan
     }
 
     static void CreateMaterial(string name, Color color, bool emissive, float glowIntensity = 2f)
@@ -106,13 +101,13 @@ public class HeadlessBuilder
         {
             mat.EnableKeyword("_EMISSION");
             mat.SetColor("_EmissionColor", color * glowIntensity);
-            mat.SetFloat("_Glossiness", 0.8f); // Shiny
-            mat.SetFloat("_Metallic", 0.3f); // Slight metallic
+            mat.SetFloat("_Glossiness", 0.9f); // Even shinier
+            mat.SetFloat("_Metallic", 0.4f); // More metallic
         }
         else
         {
-            mat.SetFloat("_Glossiness", 0.2f);
-            mat.SetFloat("_Metallic", 0.1f);
+            mat.SetFloat("_Glossiness", 0.3f);
+            mat.SetFloat("_Metallic", 0.2f);
         }
         
         AssetDatabase.CreateAsset(mat, "Assets/Materials/" + name + ".mat");
@@ -248,11 +243,12 @@ public class HeadlessBuilder
         c.backgroundColor = Color.black;
         c.fieldOfView = 75; // Wider FOV for tunnel effect
 
-        // 2. Light
+        // 2. Light (Brighter for better color visibility)
         GameObject light = new GameObject("Directional Light");
         Light l = light.AddComponent<Light>();
         l.type = LightType.Directional;
-        l.intensity = 0.8f;
+        l.intensity = 1.2f; // BOOSTED from 0.8
+        l.color = new Color(1f, 1f, 1f); // Pure white
         light.transform.rotation = Quaternion.Euler(50, -30, 0);
 
         // 3. Managers
@@ -366,21 +362,34 @@ public class HeadlessBuilder
         UnityEngine.UI.Button playBtn = CreateButton(mainMenu, "PlayButton", "PLAY");
         playBtn.onClick.AddListener(uiManager.OnPlayClicked);
 
-        // Fill Game Over
-        uiManager.finalScoreText = CreateText(gameOver, "Score", "SCORE: 0", new Vector2(0.5f, 0.7f), new Vector2(0.5f, 0.7f), Vector2.zero);
-        uiManager.bestScoreText = CreateText(gameOver, "Best", "BEST: 0", new Vector2(0.5f, 0.6f), new Vector2(0.5f, 0.6f), Vector2.zero);
+        // Fill Game Over (IMPROVED LAYOUT)
+        uiManager.finalScoreText = CreateText(gameOver, "Score", "SCORE: 0", new Vector2(0.5f, 0.75f), new Vector2(0.5f, 0.75f), Vector2.zero);
+        uiManager.finalScoreText.fontSize = 48;
         
+        uiManager.bestScoreText = CreateText(gameOver, "Best", "BEST: 0", new Vector2(0.5f, 0.65f), new Vector2(0.5f, 0.65f), Vector2.zero);
+        uiManager.bestScoreText.fontSize = 32;
+        uiManager.bestScoreText.color = new Color(0.7f, 0.7f, 0.7f);
+        
+        // RESTART button (Primary, centered, larger)
         UnityEngine.UI.Button restartBtn = CreateButton(gameOver, "RestartButton", "RESTART");
-        restartBtn.transform.localPosition = new Vector3(0, 0, 0); // Center
+        restartBtn.transform.localPosition = new Vector3(0, -50, 0);
+        RectTransform restartRT = restartBtn.GetComponent<RectTransform>();
+        restartRT.sizeDelta = new Vector2(250, 70); // Bigger button
+        restartBtn.GetComponent<UnityEngine.UI.Image>().color = new Color(0.4f, 0.7f, 1f); // Blue
         restartBtn.onClick.AddListener(uiManager.OnRestartClicked);
         
+        // Revive button (Secondary, left)
         uiManager.reviveButton = CreateButton(gameOver, "ReviveButton", "REVIVE");
-        uiManager.reviveButton.transform.localPosition = new Vector3(-200, -100, 0);
+        uiManager.reviveButton.transform.localPosition = new Vector3(-150, -150, 0);
+        uiManager.reviveButton.GetComponent<UnityEngine.UI.Image>().color = new Color(0.3f, 1f, 0.6f); // Green
         uiManager.reviveButton.onClick.AddListener(uiManager.OnReviveClicked);
         
+        // Double Energy button (Secondary, right)
         uiManager.doubleEnergyButton = CreateButton(gameOver, "DoubleEnergyButton", "x2 ENERGY");
-        uiManager.doubleEnergyButton.transform.localPosition = new Vector3(200, -100, 0);
+        uiManager.doubleEnergyButton.transform.localPosition = new Vector3(150, -150, 0);
+        uiManager.doubleEnergyButton.GetComponent<UnityEngine.UI.Image>().color = new Color(1f, 0.8f, 0.3f); // Gold
         uiManager.doubleEnergyButton.onClick.AddListener(uiManager.OnDoubleEnergyClicked);
+
 
         // Force Portrait
         PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;

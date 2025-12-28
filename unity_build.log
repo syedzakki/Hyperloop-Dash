@@ -7,9 +7,9 @@ Darwin version:          25.1.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        24576 MB
-Date:                    2025-12-28T18:50:16Z
+Date:                    2025-12-28T18:57:11Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mahmoodazeezsyed" at "2025-12-28T18:50:16.256876Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mahmoodazeezsyed" at "2025-12-28T18:57:11.63461Z"
 Launching external process: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/PackageManager/Server/UnityPackageManager
 
 COMMAND LINE ARGUMENTS:
@@ -61,23 +61,23 @@ Successfully changed project path to: /Users/mahmoodazeezsyed/Documents/TunnelRu
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8735023232]  Target information:
 
-Player connection [8735023232]  * "[IP] 192.168.0.161 [Port] 55504 [Flags] 2 [Guid] 2077077764 [EditorId] 2077077764 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8735023232]  * "[IP] 192.168.0.161 [Port] 55504 [Flags] 2 [Guid] 960632826 [EditorId] 960632826 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8735023232] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8735023232] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-5471" after 0.1 seconds.
+[Package Manager] Connected to IPC stream "Upm-5890" after 0.1 seconds.
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              cf108c875a7c4a93a4f07b7039129dc6
+  Session Id:              fffe8236b8e54f13a5412a294f5c5d60
   Correlation Id:          aaefdbbee1b67668579a0c1e115946d0
-  External correlation Id: 6790111787068081558
+  External correlation Id: 7615841897486386325
   Machine Id:              o2qiEVTF3zrHIvAJzVtx93SGEao=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mahmoodazeezsyed" (connect: 0.00s, validation: 0.00s, handshake: 0.19s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mahmoodazeezsyed-notifications" at "2025-12-28T18:50:16.450343Z"
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mahmoodazeezsyed" (connect: 0.00s, validation: 0.00s, handshake: 0.20s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mahmoodazeezsyed-notifications" at "2025-12-28T18:57:11.835671Z"
 [Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -88,7 +88,7 @@ Input System module state changed to: Initialized.
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] Licensing Background thread has ended after 0.20s
-[Licensing::Module] Licensing is initialized (took 0.03s).
+[Licensing::Module] Licensing is initialized (took 0.04s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -97,7 +97,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Artifact Garbage Collection - Removed 5 unused hashed content files
+Artifact Garbage Collection - Removed 1 unused hashed content files
 [Licensing::Client] Successfully resolved entitlement details
 Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -120,7 +120,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56471
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56890
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 ImportWorker Server TCP listen port: 0
@@ -130,42 +130,42 @@ Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.000400 seconds.
-- Loaded All Assemblies, in  0.152 seconds
+Registered in 0.000428 seconds.
+- Loaded All Assemblies, in  0.138 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 3051 ms
+Android Extension - Scanning For ADB Devices 3049 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.279 seconds
-Domain Reload Profiling: 3431ms
-	BeginReloadAssembly (46ms)
+- Finished resetting the current domain, in  3.283 seconds
+Domain Reload Profiling: 3422ms
+	BeginReloadAssembly (31ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
+		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (14ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (71ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (72ms)
 		LoadAssemblies (30ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (69ms)
-			TypeCache.Refresh (69ms)
+		AnalyzeDomain (70ms)
+			TypeCache.Refresh (70ms)
 				TypeCache.ScanAssembly (63ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (3279ms)
+	FinalizeReload (3284ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3263ms)
+		SetupLoadedEditorAssemblies (3267ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3104ms)
+			InitializePlatformSupportModulesInManaged (3118ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (57ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (58ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -250,8 +250,8 @@ Duplicate assembly 'System.Runtime.CompilerServices.Unsafe.dll' with different v
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 17.6313ms
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 15.7060ms
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
 Starting: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: /Users/mahmoodazeezsyed/Documents/TunnelRun
 DisplayProgressbar: Compiling Scripts
@@ -270,101 +270,102 @@ DisplayProgressbar: Compiling Scripts
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 11.1570ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 9.4964ms
 ExitCode: 0 Duration: 0s169ms
 [621/811    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
 *** Tundra build success (0.16 seconds), 1 items updated, 811 evaluated
-AssetDatabase: script compilation time: 0.421269s
+AssetDatabase: script compilation time: 0.420833s
 Begin MonoManager ReloadAssembly
 Total cache size 174250440
-Total cache size after purge 174250440, took 00:00:00.0531565
+Total cache size after purge 174250440, took 00:00:00.0519727
 Duplicate assembly 'System.Runtime.CompilerServices.Unsafe.dll' with different versions detected, using 'Packages/com.unity.collections/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Packages/com.unity.ai.assistant/Plugins/Markdig/Dependencies/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.259 seconds
+- Loaded All Assemblies, in  0.253 seconds
 Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Duplicate assembly 'System.Runtime.CompilerServices.Unsafe.dll' with different versions detected, using 'Packages/com.unity.collections/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Packages/com.unity.ai.assistant/Plugins/Markdig/Dependencies/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Duplicate assembly 'System.Runtime.CompilerServices.Unsafe.dll' with different versions detected, using 'Packages/com.unity.collections/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Packages/com.unity.ai.assistant/Plugins/Markdig/Dependencies/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.138 seconds
-Domain Reload Profiling: 1397ms
-	BeginReloadAssembly (65ms)
+- Finished resetting the current domain, in  1.092 seconds
+Domain Reload Profiling: 1345ms
+	BeginReloadAssembly (58ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (15ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (14ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (9ms)
-	LoadAllAssembliesAndSetupDomain (164ms)
-		LoadAssemblies (96ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (97ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (91ms)
-			TypeCache.Refresh (80ms)
-				TypeCache.ScanAssembly (73ms)
+		AnalyzeDomain (92ms)
+			TypeCache.Refresh (81ms)
+				TypeCache.ScanAssembly (74ms)
 			BuildScriptInfoCaches (9ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1138ms)
+	FinalizeReload (1092ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1071ms)
+		SetupLoadedEditorAssemblies (1010ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (12ms)
 			SetLoadedEditorAssemblies (2ms)
 			BeforeProcessingInitializeOnLoad (88ms)
-			ProcessInitializeOnLoadAttributes (783ms)
-			ProcessInitializeOnLoadMethodAttributes (186ms)
+			ProcessInitializeOnLoadAttributes (778ms)
+			ProcessInitializeOnLoadMethodAttributes (130ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
-Asset Pipeline Refresh (id=c86cf6443704d4cf1b00c1c68243a15f): Total: 2.092 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=6e3562da32b2549649a9cbfd8d3988d5): Total: 2.039 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=1383 ms
-		Asset DB Callback time: managed=9 ms, native=6 ms
-		Scripting: domain reloads=1, domain reload time=259 ms, compile time=422 ms, other=11 ms
+		Asset DB Process Time: managed=0 ms, native=1340 ms
+		Asset DB Callback time: managed=5 ms, native=6 ms
+		Scripting: domain reloads=1, domain reload time=253 ms, compile time=422 ms, other=11 ms
 		Project Asset Count: scripts=945, non-scripts=2884
 		Asset File Changes: new=0, changed=0, moved=0, deleted=0
 		Scan Filter Count: 1
 	InvokeCustomDependenciesCallbacks: 0.000ms
-	InvokePackagesCallback: 6.760ms
-	ApplyChangesToAssetFolders: 0.187ms
-	Scan: 168.644ms
+	InvokePackagesCallback: 6.925ms
+	ApplyChangesToAssetFolders: 0.181ms
+	Scan: 171.136ms
 	OnSourceAssetsModified: 0.000ms
-	CategorizeAssetsWithTransientArtifact: 9.979ms
-	ProcessAssetsWithTransientArtifactChanges: 12.634ms
-	CategorizeAssets: 18.839ms
-	ImportOutOfDateAssets: 1140.703ms (718.054ms without children)
-		CompileScripts: 422.001ms
+	CategorizeAssetsWithTransientArtifact: 10.157ms
+	ProcessAssetsWithTransientArtifactChanges: 13.027ms
+	CategorizeAssets: 18.733ms
+	ImportOutOfDateAssets: 1094.143ms (671.923ms without children)
+		CompileScripts: 421.602ms
 		ReloadNativeAssets: 0.003ms
-		UnloadImportedAssets: 0.117ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.284ms
+		UnloadImportedAssets: 0.118ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.260ms
 		InitializingProgressBar: 0.000ms
 		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
-		OnDemandSchedulerStart: 0.244ms
-	PostProcessAllAssets: 9.231ms
-	UnloadStreamsBegin: 1.130ms
-	PersistCurrentRevisions: 0.066ms
+		OnDemandSchedulerStart: 0.236ms
+	PostProcessAllAssets: 5.859ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
+	UnloadStreamsBegin: 1.071ms
+	PersistCurrentRevisions: 0.070ms
 	UnloadStreamsEnd: 0.000ms
-	GenerateScriptTypeHashes: 0.690ms
-	Untracked: 724.217ms
+	GenerateScriptTypeHashes: 0.726ms
+	Untracked: 718.151ms
 
 Application.AssetDatabase Initial Refresh End
 Launching external process: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Helpers/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Scanning for USB devices : 0.022ms
+Scanning for USB devices : 0.028ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-TunnelRun
-2025-12-29 00:20:22.298 Unity[5471:10987713] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x98f621180 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2025-12-29 00:27:17.725 Unity[5890:10994836] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x978c85180 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Unloading 44 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3956 unused Assets / (15.3 MB). Loaded Objects now: 4579.
-Memory consumption went from 186.3 MB to 171.0 MB.
-Total: 5.200125 ms (FindLiveObjects: 0.130916 ms CreateObjectMapping: 0.067292 ms MarkObjects: 3.618833 ms  DeleteObjects: 1.382875 ms)
+Unloading 3956 unused Assets / (15.6 MB). Loaded Objects now: 4579.
+Memory consumption went from 186.3 MB to 170.7 MB.
+Total: 5.139666 ms (FindLiveObjects: 0.137709 ms CreateObjectMapping: 0.062417 ms MarkObjects: 3.659208 ms  DeleteObjects: 1.279958 ms)
 
 Generating Game Content...
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
@@ -378,33 +379,33 @@ HeadlessBuilder:PerformAndroidBuild () (at Assets/Editor/HeadlessBuilder.cs:32)
 
 (Filename: Assets/Editor/HeadlessBuilder.cs Line: 21)
 
-Asset Pipeline Refresh (id=1664de355b6bf4d59add22ffda8d3d67): Total: 0.007 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=b50f645685b81461784f26a745efa8e3): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=153f2869cc5544d34ae10697ea7f9f91): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=8e0c71ed227254bbf89da70d7dbae841): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=23802aca5b2954163af73a5262cce2db): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=899b6ba70e5c548fea1c2a4b2259184f): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=da38c841f8c6c4a3baf92b1330098ab0): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=8f9daa35ecf3343e2bc73efcae9b4b9f): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=19fb278fe9a3d41268622b365e677c65): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=38ba5b583e5ad4fe89021a749e023506): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/Prefabs/Obstacle_Blocker.prefab using Guid(5d7bd7322fa6343a1a4eae60e36bedde) (PrefabImporter) -> (artifact id: '6549c8679f67fb35d3e0b238df70ca2f') in 0.002729708 seconds
-Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 1.17 ms.
-Asset Pipeline Refresh (id=3618c989564c04430bd815cf1b6ee0d6): Total: 0.140 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=4e440a20dacbe449fb259df0d1f3944c): Total: 0.007 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=cc73cdc606cd642bca19aaf244feab3a): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=1898b8ca0ea8f4633b5f85d2c8631b61): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=7750f398da72e4dadb337f84049fedef): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=268b52112ab0c47f589fb945743ef00b): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=e82b05e5237534db7b2b1bdfecaa465f): Total: 0.003 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=1a94d3f7e88444d79a44859481056e5c): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=6d91c49db1a9f47669d77e31da9c657b): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=869be84e0bc7c4d108af45e06e2dc76d): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=e653fb8c2324049c18113af7b3001bbb): Total: 0.002 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Prefabs/Obstacle_Blocker.prefab using Guid(5d7bd7322fa6343a1a4eae60e36bedde) (PrefabImporter) -> (artifact id: 'd4edb2cc8c682bc63760b9953f89a274') in 0.002880209 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 1.22 ms.
+Asset Pipeline Refresh (id=40354aabcc82f40c5aeaf9d16f95eaf5): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 98 unused Assets / (14.4 KB). Loaded Objects now: 4603.
-Memory consumption went from 161.1 MB to 161.0 MB.
-Total: 4.181375 ms (FindLiveObjects: 0.050333 ms CreateObjectMapping: 0.030083 ms MarkObjects: 4.066917 ms  DeleteObjects: 0.033875 ms)
+Memory consumption went from 161.2 MB to 161.2 MB.
+Total: 4.762083 ms (FindLiveObjects: 0.057000 ms CreateObjectMapping: 0.033667 ms MarkObjects: 4.617292 ms  DeleteObjects: 0.053834 ms)
 
-Start importing ProjectSettings/EditorBuildSettings.asset using Guid(0000000000000000b000000000000000) (LibraryAssetImporter) -> (artifact id: 'b324aaa2413858ade463a32fffbb2b8a') in 0.000743 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 1.22 ms.
-Asset Pipeline Refresh (id=5a1a087ebef3a48688e3da44ff61057b): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/Scenes/Main.unity using Guid(c0e63cd90340149bab2b99dd54b5018d) (DefaultImporter) -> (artifact id: '87769732ca8aff6bf4bc85d410174ff8') in 0.000569542 seconds
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 1.16 ms.
-Asset Pipeline Refresh (id=de918e4fa3563441288773fc20d0dcf6): Total: 0.011 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing ProjectSettings/EditorBuildSettings.asset using Guid(0000000000000000b000000000000000) (LibraryAssetImporter) -> (artifact id: 'b324aaa2413858ade463a32fffbb2b8a') in 0.000816125 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 1.59 ms.
+Asset Pipeline Refresh (id=e5d90cb718232429493b0e9ad512c523): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Scenes/Main.unity using Guid(c0e63cd90340149bab2b99dd54b5018d) (DefaultImporter) -> (artifact id: 'e6ffb00b85b811b6854e489229dd7c72') in 0.010166 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 2.17 ms.
+Asset Pipeline Refresh (id=9b58207d8dd934c389716ba004b88f88): Total: 0.048 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
 Game Content Generation Complete!
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
@@ -428,21 +429,21 @@ HeadlessBuilder:PerformAndroidBuild () (at Assets/Editor/HeadlessBuilder.cs:37)
 
 (Filename: Assets/Editor/HeadlessBuilder.cs Line: 37)
 
-Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (artifact id: '4492b7f3e2027a6b4510b807b9b0decb') in 0.000529875 seconds
-Start importing Assets/Resources/PerformanceTestRunSettings.json using Guid(54bfcc1d0a2574a18872140e76527228) (TextScriptImporter) -> (artifact id: '8ae28420ae7da9adfbd17e9557190bec') in 0.002553416 seconds
-Start importing Assets/Resources/PerformanceTestRunInfo.json using Guid(8d9f882748852445faf4942d8152e88a) (TextScriptImporter) -> (artifact id: '6165be8c6627c40e7571031bd4f72060') in 0.000506834 seconds
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 1.11 ms.
-Asset Pipeline Refresh (id=cff12156c4b424b219178862e630bc40): Total: 0.124 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (artifact id: '4492b7f3e2027a6b4510b807b9b0decb') in 0.000605458 seconds
+Start importing Assets/Resources/PerformanceTestRunInfo.json using Guid(7232d03e80280424eb843475a77571fa) (TextScriptImporter) -> (artifact id: '9a5a5e68992ee9914cc6911c6fe1e521') in 0.001168333 seconds
+Start importing Assets/Resources/PerformanceTestRunSettings.json using Guid(5bc6cfdc8086144b5a063e84b5941478) (TextScriptImporter) -> (artifact id: '262ec2a5232729d8259ebdae5b134a69') in 0.000611416 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 1.20 ms.
+Asset Pipeline Refresh (id=7562499977bc0467f9872076d74aed6b): Total: 0.096 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
 DisplayProgressbar: Checking prerequisites
 Reporting tool paths:
  JDK: '/Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/OpenJDK'
  Android SDK: '/Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/SDK'
  Android NDK: '/Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/NDK'
  Gradle: '/Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/Tools/gradle' (Gradle Version: '8.13' Android Plugin Version: '8.10.0')
-Android PostProcess task "Checking prerequisites" took 10.6673 ms
+Android PostProcess task "Checking prerequisites" took 14.4283 ms
 DisplayProgressbar: Detect Java Development Kit (JDK)
-Android PostProcess task "Detect Java Development Kit (JDK)" took 1620.022 ms
+Android PostProcess task "Detect Java Development Kit (JDK)" took 1669.6913 ms
 DisplayProgressbar: Detecting Android SDK
 AndroidSDKTools:
 
@@ -453,14 +454,14 @@ AndroidSDKTools:
 
 	adb           : /Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
 
-Android PostProcess task "Detecting Android SDK" took 3339.6141 ms
+Android PostProcess task "Detecting Android SDK" took 2924.256 ms
 DisplayProgressbar: Detect Android NDK
-Android PostProcess task "Detect Android NDK" took 0.2965 ms
-Android PostProcess task "Trying to find a suitable Android device" took 0.3428 ms
+Android PostProcess task "Detect Android NDK" took 0.3288 ms
+Android PostProcess task "Trying to find a suitable Android device" took 0.2095 ms
 DisplayProgressbar: Check resources
-Android PostProcess task "Check resources" took 0.0788 ms
+Android PostProcess task "Check resources" took 0.0863 ms
 DisplayProgressbar: Check Android Player Settings
-Android PostProcess task "Check Android Player Settings" took 0.8494 ms
+Android PostProcess task "Check Android Player Settings" took 0.8726 ms
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -468,15 +469,15 @@ Android PostProcess task "Check Android Player Settings" took 0.8494 ms
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.3438ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.5782ms
 Starting: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aESkipCompile.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
 WorkingDir: /Users/mahmoodazeezsyed/Documents/TunnelRun
 DisplayProgressbar: Compiling Scripts
 ExitCode: 0 Duration: 0s41ms
 *** Tundra build success (0.03 seconds), 0 items updated, 3 evaluated
 Total cache size 174250440
-Total cache size after purge 174250440, took 00:00:00.0554307
-Asset Pipeline Refresh (id=8a9f3e0bfe46e4b0abede771af7f79c6): Total: 0.046 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Total cache size after purge 174250440, took 00:00:00.0591230
+Asset Pipeline Refresh (id=91b12f765d4ae48bd9c75696170bdd42): Total: 0.048 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
 [ScriptCompilation] Requested script compilation because: Recompiling scripts for player build.
 BuildPlayer: start building target 13
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -486,7 +487,7 @@ BuildPlayer: start building target 13
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.1239ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.1428ms
 Starting: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/1300b0aP.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
 WorkingDir: /Users/mahmoodazeezsyed/Documents/TunnelRun
 Duplicate assembly 'System.Runtime.CompilerServices.Unsafe.dll' with different versions detected, using 'Packages/com.unity.collections/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Packages/com.unity.ai.assistant/Plugins/Markdig/Dependencies/System.Runtime.CompilerServices.Unsafe.dll, AssemblyName=System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -506,61 +507,61 @@ Duplicate assembly 'System.Runtime.CompilerServices.Unsafe.dll' with different v
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 8.2457ms
-ExitCode: 0 Duration: 0s137ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 5.4472ms
+ExitCode: 0 Duration: 0s152ms
 [407/461    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-[416/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InferenceEngine.Tokenization.dll
 [417/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InferenceEngine.dll
-[419/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.InternalAPIBridge.dll
+[418/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.MVVM.dll
+[419/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Undo.dll
+[420/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Redux.dll
 [421/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll
-[422/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.MVVM.dll
-[423/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Redux.dll
-[424/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Serialization.dll
-[425/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Undo.dll
-[426/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.004.dll
-[427/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll
-[428/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Serialization.pdb
-[429/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.pdb
-[430/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InferenceEngine.Tokenization.pdb
-[432/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InferenceEngine.pdb
-[433/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.InternalAPIBridge.pdb
-[434/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.dll
-[435/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.MVVM.pdb
-[436/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.pdb
-[437/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Undo.pdb
-[438/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.004.pdb
+[422/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll
+[423/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InferenceEngine.Tokenization.dll
+[425/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.004.dll
+[426/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.pdb
+[427/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Serialization.dll
+[428/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll
+[430/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.MVVM.pdb
+[432/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Undo.pdb
+[434/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll
+[435/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InferenceEngine.pdb
+[436/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Navigation.dll
+[437/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Collections.pdb
+[438/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Navigation.pdb
 [439/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Redux.pdb
-[440/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Collections.pdb
-[442/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Navigation.pdb
-[443/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.Navigation.dll
-[445/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll
-[446/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb
-[448/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll
-[449/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.pdb
-[453/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll
-[454/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.pdb
-[455/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll
-[456/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Burst.pdb
-[457/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.pdb
-[458/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll
-*** Tundra build success (0.13 seconds), 35 items updated, 461 evaluated
+[440/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.InternalAPIBridge.pdb
+[441/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.InternalAPIBridge.dll
+[442/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.pdb
+[443/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.pdb
+[444/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InferenceEngine.Tokenization.pdb
+[445/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Serialization.pdb
+[446/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.004.pdb
+[450/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.dll
+[451/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll
+[452/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.Burst.pdb
+[453/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb
+[455/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Unity.AppUI.pdb
+[456/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll
+[457/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll
+[458/461    0s] CopyFiles Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.pdb
+*** Tundra build success (0.14 seconds), 35 items updated, 461 evaluated
 Total cache size 174250440
-Total cache size after purge 174250440, took 00:00:00.0230967
+Total cache size after purge 174250440, took 00:00:00.0256510
 Rebuilding Data files because Assets/Scenes/Main.unity is dirty (hash)
-2025-12-29 00:20:28.240 Unity[5471:10987713] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x98f623520 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2025-12-29 00:27:23.257 Unity[5890:10994836] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x978c87520 SDF, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Opening scene 'Assets/Scenes/Main.unity'
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
 Loaded scene 'Assets/Scenes/Main.unity'
-	Deserialize:            1.787 ms
-	Integration:            138.117 ms
+	Deserialize:            1.715 ms
+	Integration:            144.992 ms
 	Integration of assets:  0.001 ms
-	Thread Wait Time:       0.003 ms
-	Total Operation Time:   139.908 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   146.714 ms
 Unloading 59 unused Assets / (0.5 MB). Loaded Objects now: 4834.
-Memory consumption went from 164.6 MB to 164.1 MB.
-Total: 7.665541 ms (FindLiveObjects: 0.089166 ms CreateObjectMapping: 0.043625 ms MarkObjects: 7.331959 ms  DeleteObjects: 0.200625 ms)
+Memory consumption went from 164.8 MB to 164.2 MB.
+Total: 7.715916 ms (FindLiveObjects: 0.084375 ms CreateObjectMapping: 0.037541 ms MarkObjects: 7.377000 ms  DeleteObjects: 0.215750 ms)
 
-Created GICache directory at /Users/mahmoodazeezsyed/Library/Caches/com.unity3d.UnityEditor/GiCache. Took: 0.001s, timestamps: [12.157 - 12.159]
+Created GICache directory at /Users/mahmoodazeezsyed/Library/Caches/com.unity3d.UnityEditor/GiCache. Took: 0.001s, timestamps: [11.804 - 11.805]
 
 
 Mono dependencies included in the build
@@ -804,18 +805,18 @@ Dependency assembly - System.Drawing.Design.dll
 DisplayProgressbar: Fetching assembly references
 Unloading 56 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 149 unused Assets / (11.6 MB). Loaded Objects now: 4648.
-Memory consumption went from 186.2 MB to 174.7 MB.
-Total: 5.088666 ms (FindLiveObjects: 0.054916 ms CreateObjectMapping: 0.029333 ms MarkObjects: 4.311542 ms  DeleteObjects: 0.692500 ms)
+Memory consumption went from 186.4 MB to 174.9 MB.
+Total: 5.111500 ms (FindLiveObjects: 0.054792 ms CreateObjectMapping: 0.030667 ms MarkObjects: 4.405666 ms  DeleteObjects: 0.620042 ms)
 
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 0 unused Assets / (3.9 MB). Loaded Objects now: 4648.
-Memory consumption went from 174.4 MB to 170.5 MB.
-Total: 4.011875 ms (FindLiveObjects: 0.063333 ms CreateObjectMapping: 0.030167 ms MarkObjects: 3.775333 ms  DeleteObjects: 0.142708 ms)
+Unloading 0 unused Assets / (3.8 MB). Loaded Objects now: 4648.
+Memory consumption went from 174.4 MB to 170.6 MB.
+Total: 4.087833 ms (FindLiveObjects: 0.068291 ms CreateObjectMapping: 0.029625 ms MarkObjects: 3.852000 ms  DeleteObjects: 0.137667 ms)
 
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 175 unused Assets / (146.7 MB). Loaded Objects now: 4648.
-Memory consumption went from 314.6 MB to 167.9 MB.
-Total: 9.830541 ms (FindLiveObjects: 0.051375 ms CreateObjectMapping: 0.034750 ms MarkObjects: 4.146959 ms  DeleteObjects: 5.597084 ms)
+Memory consumption went from 314.8 MB to 168.1 MB.
+Total: 12.370500 ms (FindLiveObjects: 0.050792 ms CreateObjectMapping: 0.032875 ms MarkObjects: 5.179916 ms  DeleteObjects: 7.106667 ms)
 
 Compiling shader "Hidden/Sentis/ReduceExpBias" pass "" (vp)
     Target graphics API: gles3
@@ -994,7 +995,7 @@ Compiling shader "Hidden/Sentis/ActivationInt" pass "" (vp)
     After scriptable stripping: 21
     Processed in 0.00 seconds
     starting compilation...
-    gles3 finished in 0.00 seconds. Local cache hits 21 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.00 seconds. Local cache hits 21 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     vulkan finished in 0.00 seconds. Local cache hits 21 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Sentis/ActivationInt in 0.00s
@@ -1089,7 +1090,7 @@ Compiling shader "Hidden/Sentis/TextureConversion/TensorToTexture" pass "" (vp)
     Processed in 0.00 seconds
     starting compilation...
     gles3 finished in 0.00 seconds. Local cache hits 36 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.00 seconds. Local cache hits 36 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.00 seconds. Local cache hits 36 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Sentis/TextureConversion/TensorToTexture in 0.00s
     gles3 (total internal programs: 36, unique: 12)
@@ -1333,8 +1334,8 @@ Compiling shader "Hidden/Sentis/ConvTranspose" pass "" (vp)
     After scriptable stripping: 1944
     Processed in 0.00 seconds
     starting compilation...
-    gles3 finished in 0.05 seconds. Local cache hits 1944 (0.46s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.10 seconds. Local cache hits 1944 (0.54s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.05 seconds. Local cache hits 1944 (0.50s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.10 seconds. Local cache hits 1944 (0.53s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.04s
 Serialized binary data for shader Hidden/Sentis/ConvTranspose in 0.00s
     gles3 (total internal programs: 1944, unique: 648)
@@ -1361,9 +1362,9 @@ Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTI
 Disabled keywords: CONVTRANSPOSE1D CONVTRANSPOSE3D DILATIONX_GT_ONE_LTE_STRIDE DILATIONY_GT_STRIDE DILATIONZ_GT_ONE_LTE_STRIDE DILATIONZ_GT_STRIDE GROUPS_ENABLED RELU SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING USEBIAS
 Shader warning in 'Hidden/Sentis/ConvTranspose': integer modulus may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ConvTranspose.shader(256) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with CONVTRANSPOSE3D DILATIONX_GT_ONE_LTE_STRIDE DILATIONY_GT_STRIDE GROUPS_ENABLED NONE USEBIAS
+Compiling Subshader: 0, Pass: , Vertex program with CONVTRANSPOSE2D DILATIONX_GT_STRIDE DILATIONY_GT_STRIDE DILATIONZ_GT_STRIDE GROUPS_ENABLED NONE USEBIAS
 Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: CONVTRANSPOSE1D CONVTRANSPOSE2D DILATIONX_GT_STRIDE DILATIONY_GT_ONE_LTE_STRIDE DILATIONZ_GT_ONE_LTE_STRIDE DILATIONZ_GT_STRIDE RELU SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: CONVTRANSPOSE1D CONVTRANSPOSE3D DILATIONX_GT_ONE_LTE_STRIDE DILATIONY_GT_ONE_LTE_STRIDE DILATIONZ_GT_ONE_LTE_STRIDE RELU SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ConvTranspose': integer modulus may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ConvTranspose.shader(256) (on vulkan)
 
 Compiling Subshader: 0, Pass: , Vertex program with CONVTRANSPOSE2D DILATIONX_GT_STRIDE DILATIONY_GT_STRIDE DILATIONZ_GT_STRIDE GROUPS_ENABLED NONE USEBIAS
@@ -1371,9 +1372,9 @@ Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTI
 Disabled keywords: CONVTRANSPOSE1D CONVTRANSPOSE3D DILATIONX_GT_ONE_LTE_STRIDE DILATIONY_GT_ONE_LTE_STRIDE DILATIONZ_GT_ONE_LTE_STRIDE RELU SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ConvTranspose': integer modulus may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ConvTranspose.shader(259) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with CONVTRANSPOSE3D DILATIONX_GT_ONE_LTE_STRIDE DILATIONY_GT_STRIDE GROUPS_ENABLED NONE USEBIAS
+Compiling Subshader: 0, Pass: , Vertex program with CONVTRANSPOSE2D DILATIONX_GT_STRIDE DILATIONY_GT_STRIDE DILATIONZ_GT_STRIDE GROUPS_ENABLED NONE USEBIAS
 Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: CONVTRANSPOSE1D CONVTRANSPOSE2D DILATIONX_GT_STRIDE DILATIONY_GT_ONE_LTE_STRIDE DILATIONZ_GT_ONE_LTE_STRIDE DILATIONZ_GT_STRIDE RELU SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: CONVTRANSPOSE1D CONVTRANSPOSE3D DILATIONX_GT_ONE_LTE_STRIDE DILATIONY_GT_ONE_LTE_STRIDE DILATIONZ_GT_ONE_LTE_STRIDE RELU SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ConvTranspose': integer modulus may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ConvTranspose.shader(259) (on vulkan)
 
 Compiling Subshader: 0, Pass: , Vertex program with CONVTRANSPOSE2D DILATIONX_GT_STRIDE DILATIONY_GT_STRIDE DILATIONZ_GT_STRIDE GROUPS_ENABLED NONE USEBIAS
@@ -1422,7 +1423,7 @@ Compiling shader "Hidden/Sentis/DepthToSpace" pass "" (vp)
     After scriptable stripping: 12
     Processed in 0.00 seconds
     starting compilation...
-    gles3 finished in 0.00 seconds. Local cache hits 12 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.00 seconds. Local cache hits 12 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     vulkan finished in 0.00 seconds. Local cache hits 12 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Sentis/DepthToSpace in 0.00s
@@ -1492,9 +1493,9 @@ Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTI
 Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': 'j': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(72) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with ReduceNone
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: K_LARGE ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(75) (on gles3)
 
 Compiling Subshader: 0, Pass: , Vertex program with ReduceMax
@@ -1507,9 +1508,9 @@ Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTI
 Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(75) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with ReduceNone
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: K_LARGE ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(77) (on gles3)
 
 Compiling Subshader: 0, Pass: , Vertex program with ReduceMax
@@ -1522,9 +1523,9 @@ Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTI
 Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(77) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with ReduceNone
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: K_LARGE ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(79) (on gles3)
 
 Compiling Subshader: 0, Pass: , Vertex program with ReduceMax
@@ -1537,9 +1538,9 @@ Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTI
 Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(79) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with ReduceNone
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: K_LARGE ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(81) (on gles3)
 
 Compiling Subshader: 0, Pass: , Vertex program with ReduceMax
@@ -1552,49 +1553,49 @@ Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTI
 Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(81) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with ReduceNone
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: K_LARGE ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: K_LARGE ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(86) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceAdd ScatterInt
+Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceNone
 Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(86) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceMul
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(88) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceAdd ScatterInt
+Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceNone
 Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(88) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceMul
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(90) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceAdd ScatterInt
+Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceNone
 Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(90) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceMul
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(92) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceAdd ScatterInt
+Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceNone
 Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/ScatterND': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterND.shader(92) (on vulkan)
 
-Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceAdd
+Compiling Subshader: 0, Pass: , Vertex program with K_LARGE ReduceMul
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceMax ReduceMin ReduceMul ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceNone SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Compiling compute shader "ReferenceImpl.PadA"
     starting stripping...
     finished in 0.00 seconds. 10 of 10 variants left
@@ -1724,12 +1725,12 @@ Serialized binary data for shader Hidden/Sentis/GridSample in 0.00s
     vulkan (total internal programs: 108, unique: 36)
 Shader warning in 'Hidden/Sentis/GridSample': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/GridSample.shader(44) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with GRIDSAMPLE1D LINEAR ZEROS
-Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ALIGN_CORNERS BORDER GRIDSAMPLE2D GRIDSAMPLE3D NEAREST REFLECTION SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Compiling Subshader: 0, Pass: , Vertex program with GRIDSAMPLE1D NEAREST ZEROS
+Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: ALIGN_CORNERS BORDER GRIDSAMPLE2D GRIDSAMPLE3D LINEAR REFLECTION SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/GridSample': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/GridSample.shader(44) (on metal)
 
-Compiling Subshader: 0, Pass: <Unnamed Pass 0>, Vertex program with GRIDSAMPLE1D LINEAR ZEROS
+Compiling Subshader: 0, Pass: <Unnamed Pass 0>, Fragment program with GRIDSAMPLE1D LINEAR ZEROS
 Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2
 Disabled keywords: ALIGN_CORNERS BORDER GRIDSAMPLE2D GRIDSAMPLE3D NEAREST REFLECTION SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/GridSample': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/GridSample.shader(44) (on vulkan)
@@ -1836,7 +1837,7 @@ Compiling shader "Hidden/Sentis/Broadcast" pass "" (vp)
     Processed in 0.00 seconds
     starting compilation...
     gles3 finished in 0.00 seconds. Local cache hits 132 (0.02s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.01 seconds. Local cache hits 132 (0.05s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.00 seconds. Local cache hits 132 (0.02s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Sentis/Broadcast in 0.00s
     gles3 (total internal programs: 132, unique: 44)
@@ -2034,7 +2035,7 @@ Compiling shader "Hidden/Sentis/ScatterElements" pass "" (vp)
     After scriptable stripping: 120
     Processed in 0.00 seconds
     starting compilation...
-    gles3 finished in 0.00 seconds. Local cache hits 120 (0.04s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.01 seconds. Local cache hits 120 (0.05s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     vulkan finished in 0.01 seconds. Local cache hits 120 (0.02s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Sentis/ScatterElements in 0.00s
@@ -2042,9 +2043,9 @@ Serialized binary data for shader Hidden/Sentis/ScatterElements in 0.00s
     vulkan (total internal programs: 120, unique: 40)
 Shader warning in 'Hidden/Sentis/ScatterElements': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterElements.shader(147) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with NoFastPath ReduceMul
+Compiling Subshader: 0, Pass: , Vertex program with NoFastPath ReduceMin
 Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceNone SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING UseDiv4Mask
+Disabled keywords: ReduceAdd ReduceMax ReduceMul ReduceNone SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING UseDiv4Mask
 Shader warning in 'Hidden/Sentis/ScatterElements': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterElements.shader(147) (on vulkan)
 
 Compiling Subshader: 0, Pass: , Vertex program with NoFastPath ReduceNone
@@ -2052,9 +2053,9 @@ Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTI
 Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceMul SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING UseDiv4Mask
 Shader warning in 'Hidden/Sentis/ScatterElements': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterElements.shader(202) (on gles3)
 
-Compiling Subshader: 0, Pass: , Vertex program with NoFastPath ReduceMul
+Compiling Subshader: 0, Pass: , Vertex program with NoFastPath ReduceMin
 Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: ReduceAdd ReduceMax ReduceMin ReduceNone SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING UseDiv4Mask
+Disabled keywords: ReduceAdd ReduceMax ReduceMul ReduceNone SHADER_API_GLES31 SHADER_API_GLES32 ScatterInt UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING UseDiv4Mask
 Shader warning in 'Hidden/Sentis/ScatterElements': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/ScatterElements.shader(202) (on vulkan)
 
 Compiling Subshader: 0, Pass: , Vertex program with NoFastPath ReduceNone
@@ -3036,7 +3037,7 @@ Shader warning in 'ConvGeneric': "TRANSPOSE_OUTPUT variants not supported with N
 Shader warning in 'ConvGeneric': "TRANSPOSE_OUTPUT variants not supported with NON_UNIFORM_CONVGROUP_PER_OC, make sure this variant is not used" at kernel Conv1D_OutTransposed_4eoc_4esp at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/ComputeShaders/ConvGeneric.compute(548)
 Shader warning in 'ConvGeneric': "TRANSPOSE_OUTPUT variants not supported with NON_UNIFORM_CONVGROUP_PER_OC, make sure this variant is not used" at kernel Conv1D_Scaled_Complex_OutTransposed_4eoc_4esp at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/ComputeShaders/ConvGeneric.compute(548)
 Shader warning in 'ConvGeneric': "TRANSPOSE_OUTPUT variants not supported with NON_UNIFORM_CONVGROUP_PER_OC, make sure this variant is not used" at kernel Conv1D_Scaled_OutTransposed_4eoc_4esp at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/ComputeShaders/ConvGeneric.compute(548)
-    finished in 0.02 seconds. Local cache hits 408, remote cache hits 0, compiled 0 variants
+    finished in 0.03 seconds. Local cache hits 408, remote cache hits 0, compiled 0 variants
 Compiling compute shader "Compute.Shaders.Broadcast.gen"
     starting stripping...
     finished in 0.00 seconds. 174 of 174 variants left
@@ -3170,8 +3171,8 @@ Disabled keywords: INT SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_
 Shader warning in 'Hidden/Sentis/SliceSet': integer divides may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(55) (on vulkan)
 
 Compiling Subshader: 0, Pass: , Vertex program with BLOCKWISE
-Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/SliceSet': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(57) (on gles3)
 
 Compiling Subshader: 0, Pass: , Vertex program with BLOCKWISE
@@ -3180,13 +3181,13 @@ Disabled keywords: INT SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_
 Shader warning in 'Hidden/Sentis/SliceSet': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(57) (on vulkan)
 
 Compiling Subshader: 0, Pass: , Vertex program with BLOCKWISE
-Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/SliceSet': integer divides may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(69) (on gles3)
 
 Compiling Subshader: 0, Pass: , Vertex program with <no keywords>
-Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: BLOCKWISE INT SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: BLOCKWISE INT SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/SliceSet': integer divides may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(69) (on metal)
 
 Compiling Subshader: 0, Pass: <Unnamed Pass 0>, Fragment program with <no keywords>
@@ -3195,13 +3196,13 @@ Disabled keywords: BLOCKWISE INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_
 Shader warning in 'Hidden/Sentis/SliceSet': integer divides may be much slower, try using uints if possible. at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(69) (on vulkan)
 
 Compiling Subshader: 0, Pass: , Vertex program with <no keywords>
-Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: BLOCKWISE INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: BLOCKWISE INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/SliceSet': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(71) (on gles3)
 
 Compiling Subshader: 0, Pass: , Vertex program with <no keywords>
-Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: BLOCKWISE INT SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Platform defines: SHADER_API_GLES30 SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: BLOCKWISE INT SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Shader warning in 'Hidden/Sentis/SliceSet': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(71) (on metal)
 
 Compiling Subshader: 0, Pass: <Unnamed Pass 0>, Vertex program with <no keywords>
@@ -3210,8 +3211,8 @@ Disabled keywords: BLOCKWISE INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_
 Shader warning in 'Hidden/Sentis/SliceSet': signed/unsigned mismatch, unsigned assumed at Packages/com.unity.ai.inference/Runtime/Core/Resources/Sentis/PixelShaders/SliceSet.shader(71) (on vulkan)
 
 Compiling Subshader: 0, Pass: , Vertex program with <no keywords>
-Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER1 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF3 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
-Disabled keywords: BLOCKWISE INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF2 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
+Platform defines: SHADER_API_MOBILE UNITY_COLORSPACE_GAMMA UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: BLOCKWISE INT SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING
 Compiling compute shader "DepthwiseConv"
     starting stripping...
     finished in 0.00 seconds. 12 of 12 variants left
@@ -3284,7 +3285,7 @@ Compiling shader "Hidden/Sentis/GroupedConv" pass "" (vp)
     After scriptable stripping: 36
     Processed in 0.00 seconds
     starting compilation...
-    gles3 finished in 0.00 seconds. Local cache hits 36 (0.02s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.00 seconds. Local cache hits 36 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     vulkan finished in 0.00 seconds. Local cache hits 36 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Sentis/GroupedConv in 0.00s
@@ -3315,8 +3316,8 @@ Compiling shader "Hidden/Sentis/Split" pass "" (vp)
     After scriptable stripping: 12
     Processed in 0.00 seconds
     starting compilation...
-    gles3 finished in 0.00 seconds. Local cache hits 12 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.00 seconds. Local cache hits 12 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.00 seconds. Local cache hits 12 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.00 seconds. Local cache hits 12 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Sentis/Split in 0.00s
     gles3 (total internal programs: 12, unique: 4)
@@ -3677,16 +3678,16 @@ Compiling shader "Standard" pass "ShadowCaster" (vp)
     Processed in 0.00 seconds
     starting compilation...
     gles3 finished in 0.00 seconds. Local cache hits 48 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.00 seconds. Local cache hits 48 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.00 seconds. Local cache hits 48 (0.02s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
     gles3 finished in 0.00 seconds. Local cache hits 39 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     vulkan finished in 0.00 seconds. Local cache hits 39 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
-    gles3 finished in 0.00 seconds. Local cache hits 6 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.00 seconds. Local cache hits 6 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.01 seconds. Local cache hits 6 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.01 seconds. Local cache hits 6 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
-    gles3 finished in 0.00 seconds. Local cache hits 24 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.00 seconds. Local cache hits 24 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.01 seconds. Local cache hits 24 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.01 seconds. Local cache hits 24 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
     gles3 finished in 0.01 seconds. Local cache hits 48 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     vulkan finished in 0.01 seconds. Local cache hits 48 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
@@ -4229,10 +4230,10 @@ Compiling shader "Hidden/Internal-DeferredShading" pass "" (vp)
     Processed in 0.00 seconds
     starting compilation...
     gles3 finished in 0.00 seconds. Local cache hits 78 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.01 seconds. Local cache hits 78 (0.06s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.00 seconds. Local cache hits 78 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
-    gles3 finished in 0.01 seconds. Local cache hits 3 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.01 seconds. Local cache hits 3 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    gles3 finished in 0.00 seconds. Local cache hits 3 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.00 seconds. Local cache hits 3 (0.00s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Internal-DeferredShading in 0.00s
     gles3 (total internal programs: 81, unique: 53)
@@ -4766,7 +4767,7 @@ Compiling shader "Hidden/Internal-UIRDefault" pass "" (vp)
     Processed in 0.00 seconds
     starting compilation...
     gles3 finished in 0.00 seconds. Local cache hits 120 (0.02s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
-    vulkan finished in 0.00 seconds. Local cache hits 120 (0.01s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
+    vulkan finished in 0.00 seconds. Local cache hits 120 (0.03s CPU time), remote cache hits 0 (0.00s CPU time), compiled 0 variants (0.00s CPU time), skipped 0 variants
     Prepared data for serialisation in 0.00s
 Serialized binary data for shader Hidden/Internal-UIRDefault in 0.00s
     gles3 (total internal programs: 120, unique: 40)
@@ -5567,11 +5568,11 @@ Serialized binary data for shader Hidden/Physics2D/SDF_Point in 0.00s
     gles3 (total internal programs: 3, unique: 1)
     vulkan (total internal programs: 3, unique: 1)
 DisplayProgressbar: Initializing
-Android PostProcess task "Initializing" took 0.3033 ms
+Android PostProcess task "Initializing" took 0.312 ms
 DisplayProgressbar: Check gradle project collisions
-Android PostProcess task "Check gradle project collisions" took 0.0906 ms
+Android PostProcess task "Check gradle project collisions" took 0.0886 ms
 DisplayProgressbar: Preparing banner
-Android PostProcess task "Preparing banner" took 0.133 ms
+Android PostProcess task "Preparing banner" took 0.1435 ms
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
@@ -5579,170 +5580,170 @@ Android PostProcess task "Preparing banner" took 0.133 ms
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.1425ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 0.2382ms
     Call "AppUIAndroidProjectFilesModifier.Setup" from assembly 'Unity.AppUI.Editor'
 Starting: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --dagfile="Library/Bee/Player39d9547f.dag" --profile="Library/Bee/backend1.traceevents" Player
 WorkingDir: /Users/mahmoodazeezsyed/Documents/TunnelRun
 Rebuilding DAG because directory contents changed: Library/PlayerDataCache/Android/Data
-*** Tundra requires additional run (0.04 seconds), 0 items updated, 0 evaluated
+*** Tundra requires additional run (0.03 seconds), 0 items updated, 0 evaluated
 Starting: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/Scripting/netcorerun/netcorerun "/Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/AndroidPlayerBuildProgram.exe" "/Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/Bee:/Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/BuildPipeline" "Library/Bee/Player39d9547f.dag.json" "Library/Bee/Player39d9547f-inputdata.json" "Library/Bee/buildprogram0.traceevents"
 WorkingDir: /Users/mahmoodazeezsyed/Documents/TunnelRun
 DisplayProgressbar: Incremental Player Build
-ExitCode: 4 Duration: 0s125ms
-ExitCode: 0 Duration: 0s596ms
+ExitCode: 4 Duration: 0s113ms
+ExitCode: 0 Duration: 0s544ms
 Starting: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --dagfile="Library/Bee/Player39d9547f.dag" --dagfilejson="Library/Bee/Player39d9547f.dag.json" --profile="Library/Bee/backend2.traceevents" Player
 WorkingDir: /Users/mahmoodazeezsyed/Documents/TunnelRun
 Finished compiling graph: 1041 nodes, 2774 flattened edges (2768 ToBuild, 6 ToUse), maximum node priority 2147483647
-[           0s] Delete 2 artifact files that are no longer in use. (like /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/dfcd3ac29310944a4809f51331575a15)
-[ 52/850    0s] WriteText Library/Bee/artifacts/csharpactions/boot.config_x4e9.info
-[ 53/850    0s] WriteText Library/Bee/artifacts/csharpactions/unity_app_guid_4t43.info
-[ 73/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/fdb3ea5dcc705e94992d7ad588c40ecb
-[ 74/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/globalgamemanagers
-[ 75/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Resources/unity_builtin_extra
-[ 77/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f9a9551ce1bacf649bf8ebce2fd5247c
-[ 78/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/fae675275dbfabd4fa5554e262a14d83
-[ 79/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/fb2396ddc12854b4b9002a233c8050bc
-[ 80/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f5d41aec1a532a34486a303124f530b4
-[ 82/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f14d590507ce4f858ce6b0d7423bc4d3
-[ 83/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f556bef586df81147920236aa139c992
-[ 84/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f33f87dc47e7e9148a2a203d30060197
-[ 85/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f300c79d4ed897348a3b46fc5d04b63a
-[ 86/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e6ba9ac609f94a7419cfabbc37593eec
-[ 87/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/ea2d7d491467e1843b44bdae610f0c2f
+[           0s] Delete 2 artifact files that are no longer in use. (like /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/54bfcc1d0a2574a18872140e76527228)
+[ 61/850    0s] WriteText Library/Bee/artifacts/csharpactions/unity_app_guid_4t43.info
+[ 62/850    0s] WriteText Library/Bee/artifacts/csharpactions/boot.config_x4e9.info
+[ 74/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Resources/unity_builtin_extra
+[ 75/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/fdb3ea5dcc705e94992d7ad588c40ecb
+[ 76/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/globalgamemanagers
+[ 77/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f5d41aec1a532a34486a303124f530b4
+[ 78/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/fb2396ddc12854b4b9002a233c8050bc
+[ 79/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/fae675275dbfabd4fa5554e262a14d83
+[ 80/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f9a9551ce1bacf649bf8ebce2fd5247c
+[ 81/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f556bef586df81147920236aa139c992
+[ 82/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f33f87dc47e7e9148a2a203d30060197
+[ 83/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f300c79d4ed897348a3b46fc5d04b63a
+[ 84/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/f14d590507ce4f858ce6b0d7423bc4d3
+[ 85/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e6ba9ac609f94a7419cfabbc37593eec
+[ 86/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/ea2d7d491467e1843b44bdae610f0c2f
+[ 87/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/eb1360987a5f7bb42beef649d8ca2d42
 [ 88/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e88f7e8badceff84bbfc496e83b8bd9e
-[ 89/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/eb1360987a5f7bb42beef649d8ca2d42
-[208/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e5167d5597ba3044fb87bb8920a61cb4
-[209/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e5b6ac4d6ccc1f5478908d0aa32ea1b2
-[210/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e697a10fb6911e44aabbf79cbcd09cab
-[211/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e23a81f305c34a6479e1aa1421c3bc63
-[212/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/dfb7a3f5f19871845a31d50ebca45cbd
-[213/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/d30a9ff45293ba24e8aa582b0dc654f1
-[214/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/d76289bd06264004ba8a30d1d7f38edf
-[215/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/d2456ac9f78a08a439794819b9ca43c6
-[216/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c81c96aaa9dc80c459afd5c99920549f
-[217/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c79610721bbad6e458d9fae3c565e23e
-[218/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/d05ce379079bdc24981764bf92992d1c
-[219/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/cfe24d04b120a8d4496b0755340a99e6
-[220/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c78f57667d2444140b9ea7f972235274
-[221/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c2955aa4959aca5459e31244e2c15c75
-[222/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c66659348633e544c91f1d7edc5e2791
-[223/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c0ec7e5a3213644fc935356fe1b2b265
-[224/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c78d03001c45ee547b26761bb1266448
-[225/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/b71baad181ac4094eb51882aea91996f
-[226/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/be2fce9270e7fa74285e34c689587b06
-[227/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/b815659d673da4345ac8fac9299ee3a2
-[228/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/b036d9835cc41bb44a9435deab7c065f
-[229/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/adaa285a80407144d8700e2cdada0126
-[230/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/aa8fe408f0ce6da4d990fc4950202f22
-[231/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/a4d597e5b60a4054ba2bd32e5aa8d401
-[232/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/a612f75a6b65ab441a0d8045fbfe42f1
+[ 89/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e697a10fb6911e44aabbf79cbcd09cab
+[ 90/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e5b6ac4d6ccc1f5478908d0aa32ea1b2
+[ 91/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e5167d5597ba3044fb87bb8920a61cb4
+[ 92/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/e23a81f305c34a6479e1aa1421c3bc63
+[ 93/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/dfb7a3f5f19871845a31d50ebca45cbd
+[ 94/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/d76289bd06264004ba8a30d1d7f38edf
+[ 95/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/d30a9ff45293ba24e8aa582b0dc654f1
+[ 96/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/cfe24d04b120a8d4496b0755340a99e6
+[ 97/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/d05ce379079bdc24981764bf92992d1c
+[ 98/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c81c96aaa9dc80c459afd5c99920549f
+[ 99/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/d2456ac9f78a08a439794819b9ca43c6
+[100/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c79610721bbad6e458d9fae3c565e23e
+[101/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c78d03001c45ee547b26761bb1266448
+[102/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c2955aa4959aca5459e31244e2c15c75
+[103/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c66659348633e544c91f1d7edc5e2791
+[104/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c78f57667d2444140b9ea7f972235274
+[105/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/c0ec7e5a3213644fc935356fe1b2b265
+[106/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/b71baad181ac4094eb51882aea91996f
+[107/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/be2fce9270e7fa74285e34c689587b06
+[108/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/b036d9835cc41bb44a9435deab7c065f
+[109/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/b815659d673da4345ac8fac9299ee3a2
+[110/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/adaa285a80407144d8700e2cdada0126
+[112/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/aa8fe408f0ce6da4d990fc4950202f22
+[113/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/a4d597e5b60a4054ba2bd32e5aa8d401
+[114/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/a612f75a6b65ab441a0d8045fbfe42f1
+[115/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9e0bdc7e646eb4c41901d1440741c569
 [234/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9c4266a79a9d1774cb85fd1ce8a6431c
-[235/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9e0bdc7e646eb4c41901d1440741c569
-[236/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9c81d7c8f6be1124ca35cda21d76a228
+[235/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9c81d7c8f6be1124ca35cda21d76a228
+[236/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9cfce579de4d59b4ab6b1a9f8ae13c20
 [237/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9c13540b5501a5a4a9389aeda03947ea
-[238/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/98163469307528a4d81ec6a9148afb5f
-[239/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/8ed47df963cf6f9409874a2ddbf1f096
-[240/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/8d9f882748852445faf4942d8152e88a
-[241/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/8b3eb5dc68bcb0543993d824868695e1
-[242/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/897317900dfc6584ba4874765def2253
-[243/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/81eabe824afe93d449780d8235c418f7
-[244/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/7d4c4a5297b240442b26b0a15942fe1b
-[245/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/7a225a456fc1fd34993bc39a9536138c
-[246/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/78866482fc7128b4e929cd71636834b8
-[247/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/77c53608d0ab97044a88bdac2a324944
-[248/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/701fd8bcd92259745b56acd7a98edeaf
-[249/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6ef3b626fe013c64cb2a9e4c0bb5c885
-[250/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6db878f4f09cdea478e3c469c5070ebc
-[251/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9828d2ad9cf725844aa703e61445ec06
-[252/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6c558750aaf135b4f926ab11237dbcaf
-[253/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9cfce579de4d59b4ab6b1a9f8ae13c20
-[254/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/95bbecfad388985419c0d7ea707d0ddd
-[255/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/653e69364a94c0e44af62210998ac051
-[256/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/66c4183e4760c1e4d9071d23d0bf4fac
-[257/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/650336bc71564104bb90727f54f81f92
-[261/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6c51dba462962144995b368f08dbc85f
-[461/850    0s] SplitFile Library/Bee/artifacts/Android/Split/sharedassets0.assets
-[479/850    0s] SplitFile Library/Bee/artifacts/Android/Split/level0
-[484/850    0s] SplitFile Library/Bee/artifacts/Android/Split/globalgamemanagers.assets
-[536/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/globalgamemanagers.assets.split1
-[537/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/globalgamemanagers.assets.split0
-[538/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/sharedassets0.assets
-[541/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/level0
-[547/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/globalgamemanagers.assets.split2
-[653/850    0s] AddBootConfigGUID Library/Bee/artifacts/Android/boot.config
-[796/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/54bfcc1d0a2574a18872140e76527228
-[797/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/64ef9f1f0ce622b4095b58cdfbfee342
-[798/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/5e9131fe657dd784ea93afffb7fb1219
-[799/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/50d1c06e2a5646f4180d52168365d2ef
-[800/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6126865a5c82ffe469c330dee64b2ead
-[801/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/61dc2ebdd095115469ace4fae36bfbdb
+[238/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/9828d2ad9cf725844aa703e61445ec06
+[239/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/98163469307528a4d81ec6a9148afb5f
+[240/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/8ed47df963cf6f9409874a2ddbf1f096
+[241/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/95bbecfad388985419c0d7ea707d0ddd
+[242/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/81eabe824afe93d449780d8235c418f7
+[243/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/897317900dfc6584ba4874765def2253
+[244/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/8b3eb5dc68bcb0543993d824868695e1
+[246/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/7d4c4a5297b240442b26b0a15942fe1b
+[247/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/7a225a456fc1fd34993bc39a9536138c
+[248/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/78866482fc7128b4e929cd71636834b8
+[249/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/7232d03e80280424eb843475a77571fa
+[250/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/77c53608d0ab97044a88bdac2a324944
+[251/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/701fd8bcd92259745b56acd7a98edeaf
+[252/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6ef3b626fe013c64cb2a9e4c0bb5c885
+[253/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6db878f4f09cdea478e3c469c5070ebc
+[254/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6c51dba462962144995b368f08dbc85f
+[255/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6c558750aaf135b4f926ab11237dbcaf
+[256/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/653e69364a94c0e44af62210998ac051
+[257/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/66c4183e4760c1e4d9071d23d0bf4fac
+[258/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/650336bc71564104bb90727f54f81f92
+[259/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/61dc2ebdd095115469ace4fae36bfbdb
+[260/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/623000f165ee0624a8924a4bc2a4ee76
+[261/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/64ef9f1f0ce622b4095b58cdfbfee342
+[265/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/5bc6cfdc8086144b5a063e84b5941478
+[266/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/6126865a5c82ffe469c330dee64b2ead
+[267/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/5e9131fe657dd784ea93afffb7fb1219
+[386/850    0s] SplitFile Library/Bee/artifacts/Android/Split/level0
+[387/850    0s] SplitFile Library/Bee/artifacts/Android/Split/sharedassets0.assets
+[389/850    0s] SplitFile Library/Bee/artifacts/Android/Split/globalgamemanagers.assets
+[535/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/globalgamemanagers.assets.split2
+[539/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/level0
+[545/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/globalgamemanagers.assets.split1
+[546/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/globalgamemanagers.assets.split0
+[547/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/sharedassets0.assets
+[644/850    0s] AddBootConfigGUID Library/Bee/artifacts/Android/boot.config
 [802/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/599cadea8d92434fb728c181a214b8e0
-[803/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/623000f165ee0624a8924a4bc2a4ee76
-[804/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/44d50c7ed27ce6e4eb04e397ed2a591c
-[805/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/4edb45e088808554f94b9545fe25772d
-[806/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/42507a0fd42be13429d5656a130c057b
-[807/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/443dde1cabf4f5049818dd233855b86c
+[803/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/4edb45e088808554f94b9545fe25772d
+[804/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/50d1c06e2a5646f4180d52168365d2ef
+[805/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/4718ce466e2248946a4c915e1df242d7
+[806/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/443dde1cabf4f5049818dd233855b86c
+[807/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/44d50c7ed27ce6e4eb04e397ed2a591c
 [808/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/4d57a351382cc4d4384f14d67b4a1382
 [809/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/4e71feb780ba59542bfe93bb5d3a6dbe
-[810/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/41faa744b4574744d9dfc5f41cf2feed
-[811/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/417fa020772413b488cc80ba8b487504
-[812/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/4718ce466e2248946a4c915e1df242d7
-[813/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/412d7b60e44e3c14eb26c2ebf8714e8d
-[814/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/33f3b1982a31b524983126ac35015f67
+[810/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/42507a0fd42be13429d5656a130c057b
+[811/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/398bb746b335d6d4b8a6f96251c516a5
+[812/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/417fa020772413b488cc80ba8b487504
+[813/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/33f3b1982a31b524983126ac35015f67
+[814/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/41faa744b4574744d9dfc5f41cf2feed
 [815/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/2ea78a964eae8e443bd2c8c91a5f8434
-[816/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/21efdbaf368369a4c9315999314fe951
-[817/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/398bb746b335d6d4b8a6f96251c516a5
-[818/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/24a90fa16ab24507abdec53849b3a02e
+[816/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/412d7b60e44e3c14eb26c2ebf8714e8d
+[817/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/2c170f454afe12e469e1f5d33434caa4
+[818/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/2aa6309ac12fd9342b1031ae5063657c
 [819/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/21916bd92136f024bb137a4ed23e9a2e
-[820/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/2c170f454afe12e469e1f5d33434caa4
-[821/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/2aa6309ac12fd9342b1031ae5063657c
+[820/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/15f5447a55aa4024cb5a8ca05ca1e3d4
+[821/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/24a90fa16ab24507abdec53849b3a02e
 [822/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/1ad904b919efe444585d30d515fcdccf
-[823/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/15a0aa31c9b91c041925cc3de29c4e26
-[824/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/16f6765321ffa364a89806e925d59d69
-[825/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/15f5447a55aa4024cb5a8ca05ca1e3d4
-[826/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/196522ca0f611744fa187099d38ee9a4
+[823/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/16f6765321ffa364a89806e925d59d69
+[824/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/196522ca0f611744fa187099d38ee9a4
+[825/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/1a07c691324387740b607ae6b8b478e0
+[826/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/21efdbaf368369a4c9315999314fe951
 [827/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/140260594244d6343adb4806e23bfef6
-[828/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/12956b51986598647b8f8efc56c79728
-[829/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/1a07c691324387740b607ae6b8b478e0
+[828/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/15a0aa31c9b91c041925cc3de29c4e26
+[829/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/119b1da74a8d931419afaa5b9d750321
 [830/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/126a6b15060a41b4fb93ca8ea360fea0
-[831/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/0caebc90d3e9cf34ab027d9ac1f3f862
-[832/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/119b1da74a8d931419afaa5b9d750321
-[833/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/059549276313d2f439e017403c57d387
-[834/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/0b25a979fca8ac84ab6ed05213a2f3af
-[835/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/0c707c0ce1bfd22408c52e496dec07d2
-[836/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/01e92b6b2795b354ba57e218f2acd000
-[837/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/03b1a861a358e4d47bed8f39804b5214
+[831/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/12956b51986598647b8f8efc56c79728
+[832/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/0caebc90d3e9cf34ab027d9ac1f3f862
+[833/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/0b25a979fca8ac84ab6ed05213a2f3af
+[834/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/0c707c0ce1bfd22408c52e496dec07d2
+[835/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/059549276313d2f439e017403c57d387
+[836/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/03b1a861a358e4d47bed8f39804b5214
+[837/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/01e92b6b2795b354ba57e218f2acd000
 [838/850    0s] CopyFiles /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/boot.config
 [849/850    0s] GuidGenerator /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid
-*** Tundra build success (0.19 seconds), 120 items updated, 850 evaluated
+*** Tundra build success (0.16 seconds), 120 items updated, 850 evaluated
 DisplayProgressbar: Calling IPostGenerateGradleAndroidProject callbacks
 Calling IPostGenerateGradleAndroidProject callbacks on '/Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary':
-Android PostProcess task "Calling IPostGenerateGradleAndroidProject callbacks" took 0.6735 ms
+Android PostProcess task "Calling IPostGenerateGradleAndroidProject callbacks" took 0.5893 ms
 DisplayProgressbar: Validate Gradle Project
-Android PostProcess task "Validate Gradle Project" took 0.7523 ms
-Android PostProcess task "Unity Services Symbol Upload" took 0.165 ms
+Android PostProcess task "Validate Gradle Project" took 0.6717 ms
+Android PostProcess task "Unity Services Symbol Upload" took 0.1146 ms
 DisplayProgressbar: Building Gradle project
 Starting: /Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/OpenJDK/bin/java -classpath "/Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/Tools/gradle/lib/gradle-launcher-8.13.jar" org.gradle.launcher.GradleMain "-Dorg.gradle.jvmargs=-Xmx4096m" "assembleRelease" 
 WorkingDir: /Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher
 Total cache size 174250440
-Total cache size after purge 174250440, took 00:00:00.0492918
-ExitCode: 0 Duration: 0s298ms
-Android PostProcess task "Building Gradle project" took 22666.6 ms
+Total cache size after purge 174250440, took 00:00:00.0368222
+ExitCode: 0 Duration: 0s277ms
+Android PostProcess task "Building Gradle project" took 23083.8073 ms
 DisplayProgressbar: Building Gradle Symbols
-Android PostProcess task "Building Gradle Symbols" took 0.4146 ms
+Android PostProcess task "Building Gradle Symbols" took 0.195 ms
 DisplayProgressbar: Processing Mapping File
-Android PostProcess task "Processing Mapping File" took 0.4732 ms
+Android PostProcess task "Processing Mapping File" took 0.2669 ms
 DisplayProgressbar: Moving output package(s)
 Deleting file '/Users/mahmoodazeezsyed/Documents/TunnelRun/Build/HyperloopDash.apk'
 Copy '/Users/mahmoodazeezsyed/Documents/TunnelRun/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build/outputs/apk/release/launcher-release.apk' -> 
  '/Users/mahmoodazeezsyed/Documents/TunnelRun/Build/HyperloopDash.apk'
-Android PostProcess task "Moving output package(s)" took 15.8193 ms
-Android PostProcess task "Checking Symbols size" took 1.1533 ms
-Refreshing native plugins compatible for Editor in 7.56 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 1.25 ms.
-Asset Pipeline Refresh (id=eef932b0d5c034093bca114ad99e73a4): Total: 0.137 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 1.05 ms.
+Android PostProcess task "Moving output package(s)" took 8.2083 ms
+Android PostProcess task "Checking Symbols size" took 0.5972 ms
+Refreshing native plugins compatible for Editor in 3.06 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 1.56 ms.
+Asset Pipeline Refresh (id=dfc7ad544346c4d0cb67248b5fc62238): Total: 0.145 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 1.27 ms.
 
 -------------------------------------------------------------------------------
 Build Report
@@ -6861,22 +6862,22 @@ Used Assets and files from the Resources folder, sorted by uncompressed size:
 -------------------------------------------------------------------------------
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 185 unused Assets / (11.6 MB). Loaded Objects now: 4759.
-Memory consumption went from 159.0 MB to 147.4 MB.
-Total: 41.883167 ms (FindLiveObjects: 0.309459 ms CreateObjectMapping: 0.033958 ms MarkObjects: 32.398625 ms  DeleteObjects: 9.139833 ms)
+Memory consumption went from 159.1 MB to 147.5 MB.
+Total: 50.103834 ms (FindLiveObjects: 0.971542 ms CreateObjectMapping: 0.039792 ms MarkObjects: 43.268750 ms  DeleteObjects: 5.823625 ms)
 
 Build Finished, Result: Success.
 Launching external process: /Applications/Unity/Hub/Editor/6000.3.2f1/Unity.app/Contents/Resources/Scripting/il2cpp/build/deploy/Analytics
-##utp:{"type":"PlayerBuildInfo","version":2,"phase":"Immediate","time":1766947853479,"processId":5471,"steps":[{"description":"Preprocess Player","duration":14},{"description":"Prepare For Build","duration":4978},{"description":"ProducePlayerScriptAssemblies","duration":397},{"description":"Verify Build setup","duration":15},{"description":"Prepare assets for target platform","duration":2},{"description":"Prepare splash screen","duration":0},{"description":"Building scenes","duration":199},{"description":"Build scripts DLLs","duration":3},{"description":"Build GlobalGameManagers file","duration":55},{"description":"Writing asset files","duration":427},{"description":"Building Resources/unity_builtin_extra","duration":53},{"description":"Write data build dirty tracking information","duration":24},{"description":"Postprocess built player","duration":23908}],"duration":30075}
+##utp:{"type":"PlayerBuildInfo","version":2,"phase":"Immediate","time":1766948268915,"processId":5890,"steps":[{"description":"Preprocess Player","duration":16},{"description":"Prepare For Build","duration":4619},{"description":"ProducePlayerScriptAssemblies","duration":424},{"description":"Verify Build setup","duration":17},{"description":"Prepare assets for target platform","duration":2},{"description":"Prepare splash screen","duration":0},{"description":"Building scenes","duration":208},{"description":"Build scripts DLLs","duration":3},{"description":"Build GlobalGameManagers file","duration":101},{"description":"Writing asset files","duration":448},{"description":"Building Resources/unity_builtin_extra","duration":50},{"description":"Write data build dirty tracking information","duration":25},{"description":"Postprocess built player","duration":24195}],"duration":30108}
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
 Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            2.795 ms
-	Integration:            381.471 ms
+	Deserialize:            2.747 ms
+	Integration:            385.985 ms
 	Integration of assets:  0.047 ms
-	Thread Wait Time:       0.006 ms
-	Total Operation Time:   384.319 ms
-Unloading 0 unused Assets / (2.3 KB). Loaded Objects now: 4940.
-Memory consumption went from 143.1 MB to 143.1 MB.
-Total: 4.767333 ms (FindLiveObjects: 0.112042 ms CreateObjectMapping: 0.035708 ms MarkObjects: 4.615000 ms  DeleteObjects: 0.004458 ms)
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   388.787 ms
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 4940.
+Memory consumption went from 143.2 MB to 143.2 MB.
+Total: 6.447917 ms (FindLiveObjects: 0.107333 ms CreateObjectMapping: 0.033375 ms MarkObjects: 6.302334 ms  DeleteObjects: 0.004625 ms)
 
 Build Succeeded!
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
@@ -6892,12 +6893,12 @@ HeadlessBuilder:PerformAndroidBuild () (at Assets/Editor/HeadlessBuilder.cs:49)
 Batchmode quit successfully invoked - shutting down!
 Starting: /Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/OpenJDK/bin/java -classpath "/Applications/Unity/Hub/Editor/6000.3.2f1/PlaybackEngines/AndroidPlayer/Tools/gradle/lib/gradle-launcher-8.13.jar" org.gradle.launcher.GradleMain "-Dorg.gradle.jvmargs=-Xmx4096m" "--stop" 
 WorkingDir: 
-Killing ADB server in 0.027917 seconds.
-Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (artifact id: '4492b7f3e2027a6b4510b807b9b0decb') in 0.001073083 seconds
-Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 1.14 ms.
-Asset Pipeline Refresh (id=104eaf115c65b4bc68f7884f630d6327): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Thread 0x322a07000 may have been prematurely finalized
+Killing ADB server in 0.051086 seconds.
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (artifact id: '4492b7f3e2027a6b4510b807b9b0decb') in 0.001465334 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 1.76 ms.
+Asset Pipeline Refresh (id=5063425ead57942ebb95379e7ed5a9e7): Total: 0.017 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Thread 0x320787000 may have been prematurely finalized
 Input System module state changed to: ShutdownInProgress.
 Input System polling thread exited.
 Input System module state changed to: Shutdown.
@@ -6905,12 +6906,12 @@ Input System module state changed to: Shutdown.
 [Physics::Module] Id: 0xf2b8ea05
 [Licensing::IpcConnector] LicenseClient-mahmoodazeezsyed-notifications channel disconnected successfully.
 [Licensing::IpcConnector] LicenseClient-mahmoodazeezsyed channel disconnected successfully.
-Thread 0x16ca73000 may have been prematurely finalized
-Thread 0x16c9e7000 may have been prematurely finalized
+Thread 0x16c8c7000 may have been prematurely finalized
+Thread 0x16c83b000 may have been prematurely finalized
 AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
 [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
-Cleanup mono
 [40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
       ALC ILPP context 2 is unloading
 debugger-agent: Unable to listen on 43
