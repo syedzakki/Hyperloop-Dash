@@ -21,6 +21,7 @@ namespace HyperloopDash.Gameplay
         public ParticleSystem crashParticles;
         public TrailRenderer trail;
 
+        public int CurrentLane => _currentLane; // Exposed for testing
         private int _currentLane = 1; // 0=Left, 1=Center, 2=Right
         private float _targetX = 0f;
         private bool _canBrake = true;

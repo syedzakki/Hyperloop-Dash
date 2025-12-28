@@ -256,6 +256,12 @@ public class HeadlessBuilder
         GameObject hud = CreatePanel(canvasObj, "HUDPanel", Color.clear);
         GameObject gameOver = CreatePanel(canvasObj, "GameOverPanel", new Color(0,0,0, 0.8f));
         
+        // Fix: Disable non-menu panels immediately in the serialized scene
+        // This ensures they don't block raycasts even before scripts initialize
+        hud.SetActive(false);
+        gameOver.SetActive(false);
+        mainMenu.SetActive(true);
+        
         uiManager.mainMenuPanel = mainMenu;
         uiManager.hudPanel = hud;
         uiManager.gameOverPanel = gameOver;
